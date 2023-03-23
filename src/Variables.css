@@ -1,0 +1,10 @@
+:root {
+  --color-main: #5ea9da;
+  --color-secondary: #e1fffe;
+
+  --hero-gradient: linear-gradient(
+    130deg,
+    rgba(41, 168, 251, 1) 0%,
+    rgba(172, 209, 233, 1) 100%
+  );
+}
