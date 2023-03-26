@@ -1,0 +1,37 @@
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background: var(--color-gradient);
+  margin-top: 0.5vh;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.faq-question {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.faq-question.active {
+  background-color: #f5f5f5;
+}
+
+.faq-answer {
+  font-size: 1vw;
+  margin: 1vw 0;
+}

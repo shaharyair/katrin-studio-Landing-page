@@ -1,6 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import "../Hero/Hero";
+import "../Content/Studio/Studio";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
@@ -22,7 +25,7 @@ function Navbar() {
   };
 
   const handleResizeMobileMenu = () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 1024) {
       setClick(false);
     }
   };
@@ -33,9 +36,17 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar__box'>
-          <Link to='/main' className='navbar__logo' onClick={closeMobileMenu}>
+          <ScrollLink
+            to='hero'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className='navbar__logo'
+            onClick={closeMobileMenu}
+          >
             <img src='/src/assets/logo-no-circle.png' alt='img' />
-          </Link>
+          </ScrollLink>
           <div className='navbar__social-icons'>
             <Link
               to='https://wa.me/972556620441'
@@ -64,58 +75,82 @@ function Navbar() {
           </div>
           <ul className={click ? "navbar__menu mobile" : "navbar__menu"}>
             <li className='navbar__item'>
-              <Link
-                to='/main'
+              <ScrollLink
+                to='hero'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link link__main'
                 onClick={closeMobileMenu}
               >
                 ראשי
-              </Link>
+              </ScrollLink>
             </li>
             <li className='navbar__item'>
-              <Link
-                to='/myths-breaker'
+              <ScrollLink
+                to='studio'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link'
                 onClick={closeMobileMenu}
               >
                 הסטודיו
-              </Link>
+              </ScrollLink>
             </li>
             <li className='navbar__item'>
-              <Link
-                to='/plans'
+              <ScrollLink
+                to='studio'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link'
                 onClick={closeMobileMenu}
               >
                 שיטת אימון
-              </Link>
+              </ScrollLink>
             </li>
             <li className='navbar__item'>
-              <Link
-                to='/myths-breaker'
+              <ScrollLink
+                to='studio'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link'
                 onClick={closeMobileMenu}
               >
-                שאלות נפוצות
-              </Link>
+                שאלות נפצות
+              </ScrollLink>
             </li>
             <li className='navbar__item'>
-              <Link
-                to='/myths-breaker'
+              <ScrollLink
+                to='studio'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link'
                 onClick={closeMobileMenu}
               >
-                מנפצות מיתוסים
-              </Link>
+                מנפצת המיתוסים
+              </ScrollLink>
             </li>
             <li className='navbar__item'>
-              <Link
-                to='/contact'
+              <ScrollLink
+                to='studio'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className='navbar__link'
                 onClick={closeMobileMenu}
               >
                 צור קשר
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </div>

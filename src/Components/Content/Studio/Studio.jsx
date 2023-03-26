@@ -4,7 +4,7 @@ import "./Studio.css";
 function Studio() {
   return (
     <>
-      <div className='studio'>
+      <div className='studio' id='studio'>
         <div className='studio__text-container'>
           <h1>הסטודיו</h1>
           <p>
