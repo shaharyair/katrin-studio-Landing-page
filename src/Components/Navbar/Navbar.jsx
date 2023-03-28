@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../Hero/Hero";
 import "../Content/Studio/Studio";
+import "../Content/FAQ/FAQ";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
@@ -115,7 +116,7 @@ function Navbar() {
             </li>
             <li className='navbar__item'>
               <ScrollLink
-                to='studio'
+                to='faq'
                 spy={true}
                 smooth={true}
                 offset={-70}

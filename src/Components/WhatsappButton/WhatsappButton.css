@@ -11,8 +11,9 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 87vh;
-  left: 5vw;
+  top: 100%;
+  left: 0;
+  transform: translate(10%, -110%);
   background-color: var(--icon-color);
   height: var(--circle-size);
   width: var(--circle-size);

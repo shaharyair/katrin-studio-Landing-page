@@ -1,48 +1,46 @@
 import React, { useState } from "react";
 import "./FAQ.css";
+import { FaAngleDown } from "react-icons/fa";
+
+const questions = [
+  {
+    question: "מה זה React?",
+    answer:
+      "React הוא ספריית פרונט-אנד לבניית אפליקציות ווב תוך שימוש במודל MVC.",
+  },
+  {
+    question: "מה היתרונות של React?",
+    answer:
+      "React מאפשר לבנות אפליקציות מורכבות בצורה יעילה ונוחה. יש לו קהילה גדולה של מפתחים ותעשיות המשתמשות בו.",
+  },
+  {
+    question: "איך אפשר להתחיל עם React?",
+    answer:
+      "יש להתקין את Node.js ואת כלי הפיתוח של React. ניתן להשתמש בכלי כמו create-react-app כדי ליצור את עצמך מבנה מתחיל.",
+  },
+];
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeQuestion, setActiveQuestion] = useState(null);
 
-  const handleClick = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
-    } else {
-      setActiveIndex(index);
-    }
+  const toggle = (i) => {
+    setActiveQuestion(i === activeQuestion ? null : i);
   };
-
-  const questions = [
-    {
-      question: "What is React?",
-      answer: "React is a JavaScript library for building user interfaces.",
-    },
-    {
-      question: "What is JSX?",
-      answer:
-        "JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files.",
-    },
-    {
-      question: "What are props?",
-      answer:
-        "Props are short for properties, which are used to pass data from one component to another in React.",
-    },
-  ];
 
   return (
     <div className='faq'>
       <div className='faq-container'>
-        {questions.map((q, index) => (
-          <div key={index} className='faq-item'>
-            <button
-              className={`faq-question ${
-                index === activeIndex ? "active" : ""
-              }`}
-              onClick={() => handleClick(index)}
-            >
-              {q.question}
-            </button>
-            {index === activeIndex && <p className='faq-answer'>{q.answer}</p>}
+        {questions.map((item, i) => (
+          <div className='item' key={i}>
+            <div className='title' onClick={() => toggle(i)}>
+              <h1>{item.question}</h1>
+              <FaAngleDown
+                className={activeQuestion === i ? "icon flip" : "icon"}
+              />
+            </div>
+            <div className={activeQuestion === i ? "answer show" : "answer"}>
+              <p>{item.answer}</p>
+            </div>
           </div>
         ))}
       </div>
