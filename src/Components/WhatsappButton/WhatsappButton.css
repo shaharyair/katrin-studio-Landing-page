@@ -2,7 +2,6 @@
 
 :root {
   --circle-size: 8rem;
-  --icon-color: #25d366;
 }
 
 .button__circle {
@@ -11,14 +10,13 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 100%;
-  left: 0;
-  transform: translate(10%, -110%);
-  background-color: var(--icon-color);
+  top: 87vh;
+  left: 2vw;
+  background-color: var(--color-main);
   height: var(--circle-size);
   width: var(--circle-size);
   border-radius: 50%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
 }
 
 .button {

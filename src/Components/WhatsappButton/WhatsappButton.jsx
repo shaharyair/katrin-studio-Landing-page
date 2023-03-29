@@ -7,7 +7,7 @@ function WhatsappButton() {
   return (
     <>
       <div className='button__circle'>
-        <Link to='https://wa.me/972556620441'>
+        <Link to='/'>
           <FaWhatsapp className='button' />
         </Link>
       </div>

@@ -4,10 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import WhatsappButton from "./Components/WhatsappButton/WhatsappButton";
-import Studio from "./Components/Studio/Studio";
-import FAQ from "./Components/FAQ/FAQ";
-import Benefits from "./Components/Benefits/Benefits";
-import ImgSlider from "./Components/ImgSlider/ImgSlider";
+import Execrises from "./Components/Content/Execrises/Execrises";
+import Studio from "./Components/Content/Studio/Studio";
 
 function App() {
   return (
@@ -16,10 +14,11 @@ function App() {
         <WhatsappButton />
         <Navbar />
         <Hero />
-        <Benefits />
         <Studio />
-        <FAQ />
-        <ImgSlider />
+        {/* <Execrises /> */}
+        <Routes>
+          <Route to='/' />
+        </Routes>
       </Router>
     </>
   );
