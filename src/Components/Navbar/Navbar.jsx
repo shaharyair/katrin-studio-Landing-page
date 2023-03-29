@@ -3,8 +3,8 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../Hero/Hero";
-import "../Content/Studio/Studio";
-import "../Content/FAQ/FAQ";
+import "../Studio/Studio";
+import "../FAQ/FAQ";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
