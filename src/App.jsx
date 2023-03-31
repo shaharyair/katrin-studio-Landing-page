@@ -13,13 +13,13 @@ function App() {
   return (
     <>
       <Router>
-        <WhatsappButton />
+        {/* <WhatsappButton /> */}
         <Navbar />
-        <Hero />
-        <Benefits />
-        <Studio />
-        <FAQ />
-        <ImgSlider />
+        {/* <Hero /> */}
+        {/* <Benefits /> */}
+        {/* <Studio /> */}
+        {/* <FAQ /> */}
+        {/* <ImgSlider /> */}
       </Router>
     </>
   );

@@ -1,8 +1,9 @@
 @import url(/src/Variables.css);
 
 :root {
+  --navbar-height: 7rem;
   --box-height: calc(var(--navbar-height) - 2rem);
-  --nav-fontSize: 2.5vh;
+  --nav-fontSize: 2rem;
 }
 
 .navbar {
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: var(--navbar-height);
   font-size: var(--nav-fontSize);
   font-weight: 400;
@@ -33,6 +34,7 @@
   order: 3;
   margin-left: auto;
   cursor: pointer;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.2));
 }
 
 .navbar__logo > img {
@@ -46,8 +48,8 @@
   align-items: center;
   width: max-content;
   height: var(--box-height);
-  font-size: calc(var(--nav-fontSize) + 2vh);
-  gap: 1vw;
+  font-size: calc(var(--nav-fontSize) + 1.5rem);
+  gap: 1rem;
   margin-right: auto;
 }
 
@@ -66,6 +68,7 @@
   justify-content: center;
   align-items: center;
   height: var(--box-height);
+  font-size: var(--nav-fontSize);
 }
 
 .navbar__menu-mobile-icon {
@@ -76,8 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   list-style: none;
+  height: 100%;
 }
 
 .navbar__link {
@@ -85,14 +88,15 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  direction: rtl;
   cursor: pointer;
   color: black;
   height: 100%;
   width: 100%;
-  padding: 0 1vw;
+  padding: 0 2rem;
 }
 
-.link__main {
+.navbar__link.link__main {
   color: var(--color-main);
 }
 
@@ -101,7 +105,23 @@
   transition: all 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
+.navbar__social-link:hover {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1248px) {
+  .navbar__box {
+    max-width: 90%;
+  }
+
+  .navbar__link {
+    padding: 0 1.5rem;
+    font-size: calc(var(--nav-fontSize) - 0.1rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .navbar__box {
     max-width: 90%;
   }
@@ -112,9 +132,9 @@
     height: initial;
     position: absolute;
     top: var(--navbar-height);
-    padding-top: 1vh;
+    padding-top: 2rem;
     left: 100%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 999;
@@ -133,7 +153,7 @@
 
   .navbar__item {
     width: 95%;
-    height: 10vh;
+    height: 8rem;
   }
 
   .navbar__item:nth-child(-n + 5) {
@@ -147,20 +167,19 @@
   .navbar__link:hover {
     background-color: white;
     color: black;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   .navbar__social-icons {
     order: 2;
     margin: auto;
-    font-size: calc(var(--nav-fontSize) + 1.5vh);
-    gap: 1rem;
+    font-size: calc(var(--nav-fontSize) + 1.6rem);
   }
 
   .navbar__menu-mobile-icon {
     display: block;
-    margin-top: 1vh;
-    font-size: calc(var(--nav-fontSize) + 0.8vh);
+    margin-top: 1rem;
+    font-size: calc(var(--nav-fontSize) + 1rem);
     order: 3;
     cursor: pointer;
   }

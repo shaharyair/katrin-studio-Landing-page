@@ -30,7 +30,6 @@ function Navbar() {
       setClick(false);
     }
   };
-
   window.addEventListener("resize", handleResizeMobileMenu);
 
   return (
