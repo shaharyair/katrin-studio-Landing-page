@@ -4,54 +4,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+  padding: 2rem;
   font-size: 10rem;
 }
 
-/* Container for the slider */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 50rem;
+  height: 100%;
   overflow: hidden;
+  transition: all 1s ease-in-out;
 }
 
-/* Style for the slider */
 .slider {
   width: 100%;
-  height: 500px;
+  height: 60rem;
   background-size: cover;
   background-position: center;
-  transition: all 0.5s ease;
+  transition: all 1s ease-in-out;
 }
 
-.slider.left {
-  /* transform: translateX(-100%); */
-}
-
-.slider.right {
-  /* transform: translateX(100%); */
-}
-
-/* Style for the arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 6rem;
   cursor: pointer;
   z-index: 2;
   color: white;
+  background-color: rgba(128, 128, 128, 0.6);
 }
 
-.left {
+.arrow.left {
   left: 0;
 }
 
-.right {
+.arrow.right {
   right: 0;
 }
 
-/* Style for the circles */
 .circle-container {
   position: absolute;
   bottom: 2rem;
@@ -65,8 +56,29 @@
   cursor: pointer;
   margin-right: 1rem;
   color: white;
+  transition: all 0.4s ease-in-out;
 }
 
-.active {
-  color: gray;
+.circle.active {
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider-background {
+    padding: 2rem 0;
+  }
+
+  .slider-container {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider-background {
+    padding: 2rem 0;
+  }
+
+  .slider-container {
+    width: 50%;
+  }
 }

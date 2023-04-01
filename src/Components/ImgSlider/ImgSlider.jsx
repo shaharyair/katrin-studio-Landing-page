@@ -11,27 +11,21 @@ const imgs = [
 
 function ImgSlider() {
   const [imgIndex, setImgIndex] = useState(0);
-  const [direction, setDirection] = useState("");
-
-  const sliderRef = useRef(null);
 
   const goToPrevious = () => {
     const isFirstSlide = imgIndex === 0;
     const newIndex = isFirstSlide ? imgs.length - 1 : imgIndex - 1;
     setImgIndex(newIndex);
-    setDirection("left");
   };
 
   const goToNext = () => {
     const isLastSlide = imgIndex === imgs.length - 1;
     const newIndex = isLastSlide ? 0 : imgIndex + 1;
     setImgIndex(newIndex);
-    setDirection("right");
   };
 
   const goToIndex = (imgIndex) => {
     setImgIndex(imgIndex);
-    setDirection("");
   };
 
   return (
@@ -39,8 +33,7 @@ function ImgSlider() {
       <div className='slider-background'>
         <div className='slider-container'>
           <div
-            className={`slider ${direction}`}
-            ref={sliderRef}
+            className='slider'
             style={{ backgroundImage: `url(${imgs[imgIndex].url})` }}
           ></div>
            
