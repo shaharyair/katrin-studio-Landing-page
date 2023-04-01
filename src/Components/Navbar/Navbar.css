@@ -156,11 +156,15 @@
     height: 8rem;
   }
 
-  .navbar__item:nth-child(-n + 5) {
+  .navbar__item:nth-child(-n + 4) {
     border-bottom: 0.1rem solid rgb(255, 255, 255, 0.3);
   }
 
   .navbar__link {
+    color: white;
+  }
+
+  .navbar__link.link__main {
     color: white;
   }
 
@@ -182,5 +186,6 @@
     font-size: calc(var(--nav-fontSize) + 1rem);
     order: 3;
     cursor: pointer;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
   }
 }
