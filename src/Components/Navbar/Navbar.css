@@ -28,6 +28,7 @@
   width: 100%;
   height: var(--box-height);
   max-width: 75%;
+  transition: all 1s ease;
 }
 
 .navbar__logo {
