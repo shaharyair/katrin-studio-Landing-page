@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <Router>
+        <Navbar />
         <Hero />
       </Router>
     </>
