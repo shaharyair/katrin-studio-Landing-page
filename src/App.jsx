@@ -14,12 +14,6 @@ function App() {
     <>
       <Router>
         <WhatsappButton />
-        <Navbar />
-        <Hero />
-        <Benefits />
-        <Studio />
-        <FAQ />
-        <ImgSlider />
       </Router>
     </>
   );
