@@ -30,7 +30,6 @@ function Navbar() {
       setClick(false);
     }
   };
-
   window.addEventListener("resize", handleResizeMobileMenu);
 
   return (
@@ -72,7 +71,11 @@ function Navbar() {
             </Link>
           </div>
           <div className='navbar__menu-mobile-icon' onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
+            {click ? (
+              <FaTimes className='mobile-icon' />
+            ) : (
+              <FaBars className='mobile-icon' />
+            )}
           </div>
           <ul className={click ? "navbar__menu mobile" : "navbar__menu"}>
             <li className='navbar__item'>
@@ -99,19 +102,6 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 הסטודיו
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='studio'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                שיטת אימון
               </ScrollLink>
             </li>
             <li className='navbar__item'>
