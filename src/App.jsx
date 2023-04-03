@@ -13,13 +13,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* <WhatsappButton /> */}
-        {/* <Navbar /> */}
-        <Hero />
-        <Benefits />
-        <Studio />
-        {/* <FAQ /> */}
-        {/* <ImgSlider /> */}
       </Router>
     </>
   );
