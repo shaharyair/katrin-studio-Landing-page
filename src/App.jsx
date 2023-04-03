@@ -12,7 +12,10 @@ import ImgSlider from "./Components/ImgSlider/ImgSlider";
 function App() {
   return (
     <>
-      <Router></Router>
+      <Router>
+        <Navbar />
+        <Hero />
+      </Router>
     </>
   );
 }
