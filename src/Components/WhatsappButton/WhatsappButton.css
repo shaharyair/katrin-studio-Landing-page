@@ -1,7 +1,7 @@
 @import url(/src/Variables.css);
 
 :root {
-  --circle-size: 8rem;
+  --circle-size: 7rem;
   --icon-color: #25d366;
 }
 
@@ -13,15 +13,28 @@
   position: fixed;
   top: 100%;
   left: 0;
-  transform: translate(10%, -110%);
+  transform: translate(20%, -120%);
   background-color: var(--icon-color);
   height: var(--circle-size);
   width: var(--circle-size);
   border-radius: 50%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
 }
 
 .button {
-  font-size: 5rem;
+  font-size: calc(var(--circle-size) - 3rem);
+  width: 100%;
+  height: 100%;
   color: #fff;
+}
+
+.button__circle:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --circle-size: 8rem;
+  }
 }
