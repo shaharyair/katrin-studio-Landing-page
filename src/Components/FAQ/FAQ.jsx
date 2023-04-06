@@ -28,21 +28,25 @@ const FAQ = () => {
   };
 
   return (
-    <div className='faq'>
-      {questions.map((item, i) => (
-        <div className='faq-item' key={i}>
-          <div className='title' onClick={() => toggle(i)}>
-            <h1>{item.question}</h1>
-            <FaAngleDown
-              className={activeQuestion === i ? "icon flip" : "icon"}
-            />
-          </div>
-          <div className={activeQuestion === i ? "answer show" : "answer"}>
-            <p>{item.answer}</p>
-          </div>
+    <>
+      <div className='faq-box'>
+        <div className='faq'>
+          {questions.map((item, i) => (
+            <div className='faq-item' key={i}>
+              <div className='title' onClick={() => toggle(i)}>
+                <h1>{item.question}</h1>
+                <FaAngleDown
+                  className={activeQuestion === i ? "icon flip" : "icon"}
+                />
+              </div>
+              <div className={activeQuestion === i ? "answer show" : "answer"}>
+                <p>{item.answer}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 
