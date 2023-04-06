@@ -1,30 +1,34 @@
-@import url(/src/Variables.css);
-
 :root {
-  --font-size: 5rem;
+  --hero-fontSize: 3rem;
 }
 
 .hero {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background: var(--color-gradient);
 }
 
 .hero__video {
-  width: 100%;
+  transition: all 0.5s ease-in-out;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.hero__container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  height: 75%;
+.hero__text-container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-direction: column;
+  height: 50%;
+  border: solid 1.5rem rgba(#000, 0.2);
+  transition: all 1s ease-in-out;
 }
 
 .hero__img {
@@ -33,10 +37,9 @@
 
 .hero__text-head {
   font-weight: 400;
-  font-size: calc(var(--font-size) + 2rem);
+  font-size: calc(var(--hero-fontSize) + 1rem);
   color: white;
   text-shadow: 0 0.3rem 0.6rem black;
-  z-index: 1;
 }
 
 .hero__text-head > h1 {
@@ -46,34 +49,66 @@
 .hero__text {
   text-align: center;
   direction: rtl;
-  font-size: calc(var(--font-size));
+  font-size: calc(var(--hero-fontSize) + 0.5rem);
   font-weight: 400;
   color: white;
   text-shadow: 0 0.3rem 0.6rem black;
-  z-index: 1;
 }
 
 .hero__buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .hero__button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   white-space: nowrap;
+  font-size: calc(var(--hero-fontSize) - 1rem);
   font-weight: 400;
+  padding: 1rem 1.5rem;
   text-decoration: none;
-  font-size: calc(var(--font-size) - 2rem);
-  background-color: var(--color-main);
-  color: white;
-  padding: 1.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 0.15rem solid white;
+  color: white;
+  gap: 1rem;
   direction: rtl;
-  gap: 2rem;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
   text-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: var(--color-main);
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --hero-fontSize: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --hero-fontSize: 4rem;
+  }
+  .hero__text-container {
+    left: 70%;
+    transform: translateX(-50%);
+    height: 60%;
+  }
+
+  .hero__buttons-container {
+    gap: 3rem;
+  }
+
+  .hero__button {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
 }

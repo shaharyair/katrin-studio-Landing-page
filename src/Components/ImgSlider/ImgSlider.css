@@ -1,72 +1,76 @@
-.slider-background {
-  height: 100%;
+:root {
+  --imgslider-fontSize: 5rem;
+}
+
+.slider-box {
   width: 100%;
+  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
-  font-size: 10rem;
 }
 
-/* Container for the slider */
-.slider-container {
+.container {
   position: relative;
-  width: 100%;
-  height: 50rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* Style for the slider */
+.slider-container-overflow {
+  height: 100%;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.slider-container {
+  display: flex;
+  height: 100%;
+  transition: all 1s ease;
+}
+
 .slider {
-  width: 100%;
-  height: 500px;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  transition: all 0.5s ease;
 }
 
-.slider.left {
-  /* transform: translateX(-100%); */
-}
-
-.slider.right {
-  /* transform: translateX(100%); */
-}
-
-/* Style for the arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: var(--imgslider-fontSize);
   cursor: pointer;
   z-index: 2;
   color: white;
+  background-color: rgba(128, 128, 128, 0.6);
 }
 
-.left {
+.arrow.left {
   left: 0;
 }
 
-.right {
+.arrow.right {
   right: 0;
 }
 
-/* Style for the circles */
 .circle-container {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
 
 .circle {
-  font-size: 1.5rem;
+  font-size: calc(var(--imgslider-fontSize) - 4rem);
   cursor: pointer;
   margin-right: 1rem;
   color: white;
+  transition: all 0.4s ease-in-out;
 }
 
-.active {
+.circle.active {
   color: gray;
 }

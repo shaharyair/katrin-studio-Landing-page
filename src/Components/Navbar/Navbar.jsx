@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../Hero/Hero";
 import "../Studio/Studio";
@@ -30,7 +29,6 @@ function Navbar() {
       setClick(false);
     }
   };
-
   window.addEventListener("resize", handleResizeMobileMenu);
 
   return (
@@ -49,30 +47,34 @@ function Navbar() {
             <img src='/src/assets/logo-no-circle.png' alt='img' />
           </ScrollLink>
           <div className='navbar__social-icons'>
-            <Link
-              to='https://wa.me/972556620441'
+            <a
+              href='https://wa.me/972556620441'
               className='navbar__social-link'
             >
               <FaWhatsappSquare />
-            </Link>
-            <Link
-              to='https://www.instagram.com/katrinyair/'
+            </a>
+            <a
+              href='https://www.instagram.com/katrinyair/'
               className='navbar__social-link'
             >
               <FaInstagramSquare />
-            </Link>
-            <Link
-              to='https://www.facebook.com/katrin.yair'
+            </a>
+            <a
+              href='https://www.facebook.com/katrin.yair'
               className='navbar__social-link'
             >
               <FaFacebookSquare />
-            </Link>
-            <Link to='tel:+972556620441' className='navbar__social-link'>
+            </a>
+            <a href='tel:+972556620441' className='navbar__social-link'>
               <FaPhoneSquareAlt />
-            </Link>
+            </a>
           </div>
           <div className='navbar__menu-mobile-icon' onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
+            {click ? (
+              <FaTimes className='mobile-icon' />
+            ) : (
+              <FaBars className='mobile-icon' />
+            )}
           </div>
           <ul className={click ? "navbar__menu mobile" : "navbar__menu"}>
             <li className='navbar__item'>
@@ -99,19 +101,6 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 הסטודיו
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='studio'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                שיטת אימון
               </ScrollLink>
             </li>
             <li className='navbar__item'>
