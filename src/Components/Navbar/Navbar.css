@@ -1,7 +1,7 @@
 :root {
   --navbar-height: 7rem;
   --box-height: calc(var(--navbar-height) - 2rem);
-  --nav-fontSize: 2rem;
+  --navbar-fontSize: 2rem;
 }
 
 .navbar {
@@ -12,7 +12,7 @@
   align-items: center;
   width: 100vw;
   height: var(--navbar-height);
-  font-size: var(--nav-fontSize);
+  font-size: var(--navbar-fontSize);
   font-weight: 400;
   background-color: #fff;
   box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.2);
@@ -47,7 +47,7 @@
   align-items: center;
   width: max-content;
   height: var(--box-height);
-  font-size: calc(var(--nav-fontSize) + 1.5rem);
+  font-size: calc(var(--navbar-fontSize) + 1.5rem);
   gap: 1rem;
   margin-right: auto;
 }
@@ -67,7 +67,7 @@
   justify-content: center;
   align-items: center;
   height: var(--box-height);
-  font-size: var(--nav-fontSize);
+  font-size: var(--navbar-fontSize);
 }
 
 .navbar__menu-mobile-icon {
@@ -116,7 +116,7 @@
 
   .navbar__link {
     padding: 0 1.5rem;
-    font-size: calc(var(--nav-fontSize) - 0.1rem);
+    font-size: calc(var(--navbar-fontSize) - 0.1rem);
   }
 }
 
@@ -176,13 +176,13 @@
   .navbar__social-icons {
     order: 2;
     margin: auto;
-    font-size: calc(var(--nav-fontSize) + 1.6rem);
+    font-size: calc(var(--navbar-fontSize) + 1.6rem);
   }
 
   .navbar__menu-mobile-icon {
     display: block;
     margin-top: 1rem;
-    font-size: calc(var(--nav-fontSize) + 1rem);
+    font-size: calc(var(--navbar-fontSize) + 1rem);
     order: 3;
     cursor: pointer;
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
