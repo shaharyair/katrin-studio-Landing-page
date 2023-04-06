@@ -1,7 +1,5 @@
-@import url(/src/Variables.css);
-
 :root {
-  --font-size: 2rem;
+  --faq-fontsize: 2rem;
 }
 
 .faq {
@@ -19,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  font-size: calc(var(--font-size));
+  font-size: calc(var(--faq-fontsize));
   gap: 1rem;
   direction: rtl;
   background-color: rgba(255, 255, 255, 0.25);
@@ -32,13 +30,13 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: calc(var(--font-size) + 0.5rem);
+  font-size: calc(var(--faq-fontsize) + 0.5rem);
   letter-spacing: 0.05rem;
 }
 
 .title > h1 {
   font-weight: 500;
-  font-size: calc(var(--font-size) + 0.5rem);
+  font-size: calc(var(--faq-fontsize) + 0.5rem);
 }
 
 .icon {
@@ -62,7 +60,7 @@
 
 @media only screen and (min-width: 768px) {
   :root {
-    --font-size: 2.5rem;
+    --faq-fontsize: 2.5rem;
   }
 
   .faq {

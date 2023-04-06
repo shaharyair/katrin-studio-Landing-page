@@ -1,7 +1,5 @@
-@import url(/src/Variables.css);
-
 :root {
-  --font-size: 3rem;
+  --hero-fontSize: 3rem;
 }
 
 .hero {
@@ -39,7 +37,7 @@
 
 .hero__text-head {
   font-weight: 400;
-  font-size: calc(var(--font-size) + 1rem);
+  font-size: calc(var(--hero-fontSize) + 1rem);
   color: white;
   text-shadow: 0 0.3rem 0.6rem black;
 }
@@ -51,7 +49,7 @@
 .hero__text {
   text-align: center;
   direction: rtl;
-  font-size: calc(var(--font-size) + 0.5rem);
+  font-size: calc(var(--hero-fontSize) + 0.5rem);
   font-weight: 400;
   color: white;
   text-shadow: 0 0.3rem 0.6rem black;
@@ -70,7 +68,7 @@
   align-items: center;
   position: relative;
   white-space: nowrap;
-  font-size: calc(var(--font-size) - 1rem);
+  font-size: calc(var(--hero-fontSize) - 1rem);
   font-weight: 400;
   padding: 1rem 1.5rem;
   text-decoration: none;
@@ -91,13 +89,13 @@
 
 @media only screen and (min-width: 768px) {
   :root {
-    --font-size: 3.5rem;
+    --hero-fontSize: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   :root {
-    --font-size: 4rem;
+    --hero-fontSize: 4rem;
   }
   .hero__text-container {
     left: 70%;
