@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap");
 
+:root {
+  --color-main: #5ea9da;
+  --color-secondary: #e1fffe;
+  --color-gradient: linear-gradient(
+    250deg,
+    rgba(41, 168, 251, 1) 0%,
+    rgba(172, 209, 233, 1) 100%
+  );
+}
+
 html {
   font-size: 62.5%;
   font-family: "Assistant", sans-serif;
