@@ -1,7 +1,5 @@
-@import url(/src/Variables.css);
-
 :root {
-  --font-size: 2rem;
+  --studio-fontSize: 2rem;
 }
 
 .studio {
@@ -42,7 +40,7 @@
 
 .studio__text-container > h1 {
   font-weight: 300;
-  font-size: calc(var(--font-size) + 2.5rem);
+  font-size: calc(var(--studio-fontSize) + 2.5rem);
   color: rgb(255, 255, 255);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000, 0 0.2rem 0.8rem rgba(0, 0, 0, 0.516);
@@ -50,13 +48,13 @@
 
 .studio__text-container > p {
   font-weight: 200;
-  font-size: calc(var(--font-size));
-  line-height: calc(var(--font-size) + 1.2rem);
+  font-size: calc(var(--studio-fontSize));
+  line-height: calc(var(--studio-fontSize) + 1.2rem);
 }
 
 @media only screen and (min-width: 768px) {
   :root {
-    --font-size: 2.5rem;
+    --studio-fontSize: 2.5rem;
   }
   .studio__text-container {
     max-width: 70%;
@@ -65,7 +63,7 @@
 
 @media only screen and (min-width: 1024px) {
   :root {
-    --font-size: 3rem;
+    --studio-fontSize: 3rem;
   }
   .studio__text-container {
     max-width: 65%;
