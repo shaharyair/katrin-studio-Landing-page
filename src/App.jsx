@@ -15,6 +15,9 @@ function App() {
       <Hero />
       <WhatsappButton />
       <Benefits />
+      <Studio />
+      <FAQ />
+      <ImgSlider />
     </>
   );
 }
