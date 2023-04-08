@@ -3,7 +3,7 @@
 }
 
 .benefits {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 5rem 0;
   display: grid;
@@ -11,7 +11,7 @@
 }
 
 .benefits-container {
-  max-width: 85%;
+  max-width: 80%;
   display: grid;
   grid-gap: 6rem;
   direction: rtl;
@@ -48,6 +48,6 @@
   .benefits-container {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    max-width: 75%;
+    max-width: 60%;
   }
 }

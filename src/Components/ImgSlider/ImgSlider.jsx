@@ -28,15 +28,15 @@ function ImgSlider() {
     setImgIndex(imgIndex);
   };
 
-  const [sliderWidth, setSliderWidth] = useState(350);
+  const [sliderWidth, setSliderWidth] = useState(340);
 
   const changeSliderWidth = () => {
     if (window.innerWidth >= 1024) {
-      setSliderWidth(600);
+      setSliderWidth(650);
     } else if (window.innerWidth >= 768) {
-      setSliderWidth(450);
+      setSliderWidth(500);
     } else {
-      setSliderWidth(350);
+      setSliderWidth(340);
     }
   };
 
