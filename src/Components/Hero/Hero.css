@@ -9,7 +9,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background: var(--color-gradient);
+  /* background: var(--color-gradient); */
 }
 
 .hero__video {
@@ -21,12 +21,13 @@
 
 .hero__text-container {
   position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 8rem;
   flex-direction: column;
-  height: 50%;
+  height: 60%;
   border: solid 1.5rem rgba(#000, 0.2);
   transition: all 1s ease-in-out;
 }
@@ -91,6 +92,9 @@
   :root {
     --hero-fontSize: 3.5rem;
   }
+  .hero__text-container {
+    height: 60%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -98,9 +102,10 @@
     --hero-fontSize: 4rem;
   }
   .hero__text-container {
+    top: 50%;
     left: 70%;
-    transform: translateX(-50%);
-    height: 60%;
+    transform: translate(-50%, -50%);
+    height: 75%;
   }
 
   .hero__buttons-container {

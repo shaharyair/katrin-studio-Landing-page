@@ -9,10 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/src/assets/gymexample.jpg) fixed center no-repeat;
+  background: url(/src/assets/gymexample.jpg) center no-repeat;
   background-size: cover;
   padding: 4rem 0;
-  margin: 1rem 0;
 }
 
 .studio::after {

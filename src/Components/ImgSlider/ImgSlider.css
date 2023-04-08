@@ -4,10 +4,11 @@
 
 .slider-box {
   width: 100%;
-  height: 30rem;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
 }
 
 .container {
