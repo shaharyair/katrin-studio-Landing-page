@@ -1,0 +1,53 @@
+:root {
+  --footer-fontSize: 2rem;
+}
+
+.footer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 1.5rem;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.25);
+}
+
+.footer__container {
+  max-width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: var(--footer-fontSize);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: var(--color-main);
+}
+
+.footer__container > img {
+  width: 7.5rem;
+}
+
+.nav__img {
+  width: 8rem;
+}
