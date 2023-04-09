@@ -7,7 +7,7 @@ import Studio from "./Components/Studio/Studio";
 import FAQ from "./Components/FAQ/FAQ";
 import Benefits from "./Components/Benefits/Benefits";
 import ImgSlider from "./Components/ImgSlider/ImgSlider";
-import Footer from "./Components/Footer/Footer";
+import SignupForm from "./Components/SignupForm/SignupForm";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Studio />
       <FAQ />
       <ImgSlider />
-      <Footer />
+      <SignupForm />
     </>
   );
 }
