@@ -7,17 +7,12 @@ import Studio from "./Components/Studio/Studio";
 import FAQ from "./Components/FAQ/FAQ";
 import Benefits from "./Components/Benefits/Benefits";
 import ImgSlider from "./Components/ImgSlider/ImgSlider";
+import SignupForm from "./Components/SignupForm/SignupForm";
 
 function App() {
   return (
     <>
-      <WhatsappButton />
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <Studio />
-      <FAQ />
-      <ImgSlider />
+      <SignupForm />
     </>
   );
 }
