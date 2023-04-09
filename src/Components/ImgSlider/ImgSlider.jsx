@@ -32,9 +32,9 @@ function ImgSlider() {
 
   const changeSliderWidth = () => {
     if (window.innerWidth >= 1024) {
-      setSliderWidth(650);
+      setSliderWidth(550);
     } else if (window.innerWidth >= 768) {
-      setSliderWidth(500);
+      setSliderWidth(440);
     } else {
       setSliderWidth(340);
     }
@@ -57,7 +57,7 @@ function ImgSlider() {
   return (
     <>
       <div className='slider-box'>
-        <div className='container'>
+        <div className='slider-box-container'>
           <div
             className='slider-container-overflow'
             style={{ width: `${sliderWidth}px` }}

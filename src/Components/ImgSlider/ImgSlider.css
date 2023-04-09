@@ -8,10 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
 }
 
-.container {
+.slider-box-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -67,7 +66,7 @@
 .circle {
   font-size: calc(var(--imgslider-fontSize) - 4rem);
   cursor: pointer;
-  margin-right: 1rem;
+  margin: 0 0.5rem;
   color: white;
   transition: all 0.4s ease-in-out;
 }
@@ -79,5 +78,11 @@
 @media only screen and (min-width: 768px) {
   .slider-box {
     height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider-box {
+    height: 45vh;
   }
 }
