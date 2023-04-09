@@ -12,6 +12,13 @@ import SignupForm from "./Components/SignupForm/SignupForm";
 function App() {
   return (
     <>
+      <WhatsappButton />
+      <Navbar />
+      <Hero />
+      <Benefits />
+      <Studio />
+      <FAQ />
+      <ImgSlider />
       <SignupForm />
     </>
   );
