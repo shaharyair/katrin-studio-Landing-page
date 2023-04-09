@@ -8,6 +8,7 @@ import FAQ from "./Components/FAQ/FAQ";
 import Benefits from "./Components/Benefits/Benefits";
 import ImgSlider from "./Components/ImgSlider/ImgSlider";
 import SignupForm from "./Components/SignupForm/SignupForm";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <FAQ />
       <ImgSlider />
       <SignupForm />
+      <Footer />
     </>
   );
 }
