@@ -4,9 +4,10 @@ import "./ImgSlider.css";
 import { FaAngleLeft, FaAngleRight, FaCircle } from "react-icons/fa";
 
 const imgs = [
-  { url: "/src/assets/img2.jpg" },
-  { url: "/src/assets/img1.jpg" },
-  { url: "/src/assets/img3.jpg" },
+  { url: "/src/assets/benefits1.jpg" },
+  { url: "/src/assets/benefits2.jpg" },
+  { url: "/src/assets/benefits3.jpg" },
+  { url: "/src/assets/benefits4.jpg" },
 ];
 
 function ImgSlider() {
