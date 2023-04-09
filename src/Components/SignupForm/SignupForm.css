@@ -2,14 +2,25 @@
   --signup-fontSize: 1.6rem;
 }
 
+.form-box {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+  direction: rtl;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33rem;
-  height: 50%;
-  margin: 1rem auto;
+  width: 34rem;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
@@ -50,11 +61,21 @@
   background-color: #555;
 }
 
+.form-box > h1 {
+  color: white;
+  font-size: calc(var(--signup-fontSize) + 1.5rem);
+}
+
 @media only screen and (min-width: 768px) {
+  .form-box {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
   .form-container {
     flex-direction: row-reverse;
     width: 70rem;
-    padding: 1.5rem;
+    padding: 2rem;
     gap: 1rem;
   }
 
@@ -69,5 +90,11 @@
 
   .form-container > button[type="submit"] {
     font-size: calc(var(--signup-fontSize) + 0.2rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-box {
+    gap: 10rem;
   }
 }
