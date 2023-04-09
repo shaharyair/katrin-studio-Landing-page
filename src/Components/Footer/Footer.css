@@ -7,12 +7,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255);
   padding: 1.5rem;
   margin-top: 5vh;
   display: flex;
   justify-content: center;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.25);
+  border-top: 0.05rem solid rgba(0, 0, 0, 0.3);
 }
 
 .footer__container {
@@ -34,20 +34,17 @@
   gap: 2rem;
 }
 
-.nav__link {
+.footer__nav-link {
   font-size: var(--footer-fontSize);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.nav__link:hover {
+.footer__nav-link:hover {
   color: var(--color-main);
 }
 
-.footer__container > img {
-  width: 7.5rem;
-}
-
-.nav__img {
+.footer__nav-logo > img {
   width: 8rem;
+  cursor: pointer;
 }
