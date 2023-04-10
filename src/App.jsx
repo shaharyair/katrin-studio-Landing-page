@@ -6,9 +6,9 @@ import WhatsappButton from "./Components/WhatsappButton/WhatsappButton";
 import Studio from "./Components/Studio/Studio";
 import FAQ from "./Components/FAQ/FAQ";
 import Benefits from "./Components/Benefits/Benefits";
-import ImgSlider from "./Components/ImgSlider/ImgSlider";
 import SignupForm from "./Components/SignupForm/SignupForm";
 import Footer from "./Components/Footer/Footer";
+import Reviews from "./Components/Reviews/Reviews";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Benefits />
       <Studio />
       <FAQ />
-      <ImgSlider />
+      <Reviews />
       <SignupForm />
       <Footer />
     </>
