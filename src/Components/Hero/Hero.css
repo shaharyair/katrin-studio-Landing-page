@@ -29,7 +29,7 @@
   flex-direction: column;
   height: 65%;
   border: solid 1.5rem rgba(#000, 0.2);
-  transition: all 1s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .hero__img {
@@ -80,7 +80,6 @@
   direction: rtl;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
   text-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.8);
-  transition: all 0.5s ease-in-out;
 }
 
 .hero__button:hover {

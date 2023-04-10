@@ -25,7 +25,6 @@
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
-  transition: all 1s ease;
 }
 
 .form-field {
