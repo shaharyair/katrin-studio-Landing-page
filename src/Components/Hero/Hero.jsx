@@ -7,9 +7,16 @@ function Hero() {
   return (
     <>
       <div className='hero' id='hero'>
-        <video autoPlay muted loop className='hero__video'>
-          <source src={bgVideo} type='video/mp4' />
-        </video>
+        <video
+          className='hero__video'
+          src={bgVideo}
+          type='video/mp4'
+          autoPlay='autoplay'
+          playsInLine='playsinline'
+          loop='true'
+          muted='true'
+        />
+
         <div className='hero__text-container'>
           <div className='hero__text-head'>
             <h1>קאתרין</h1>
