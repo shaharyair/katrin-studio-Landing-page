@@ -5,20 +5,28 @@
 .faq-box {
   width: 100%;
   height: 100%;
-  margin-top: 5vh;
   display: grid;
   place-items: center;
+  background-color: rgb(25, 25, 25);
+  padding: 3rem 0;
 }
 
 .faq {
-  width: 34rem;
+  width: 90vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: var(--color-gradient); */
   /* transition: all 1s ease; */
+}
+
+.faq > h1 {
+  color: var(--color-main);
+  font-weight: 500;
+  font-size: calc(var(--faq-fontsize) + 2.5rem);
+  margin-bottom: 2rem;
+  letter-spacing: 0.08rem;
 }
 
 .faq-item {
@@ -27,11 +35,11 @@
   justify-content: center;
   width: 100%;
   font-size: calc(var(--faq-fontsize));
-  gap: 1rem;
+  gap: 2rem;
   direction: rtl;
-  background-color: rgba(255, 255, 255, 0.25);
   padding: 1.5rem 2rem;
   transition: all 0.5s ease;
+  color: white;
 }
 
 .title {
@@ -40,7 +48,12 @@
   align-items: center;
   cursor: pointer;
   font-size: calc(var(--faq-fontsize) + 0.5rem);
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.08rem;
+}
+
+.title > h1,
+.faq-icon {
+  cursor: pointer;
 }
 
 .title > h1 {
@@ -48,23 +61,23 @@
   font-size: calc(var(--faq-fontsize) + 0.5rem);
 }
 
-.icon {
+.faq-icon {
   transition: transform 0.5s ease;
 }
 
-.icon.flip {
+.faq-icon.flip {
   transform: rotate(-180deg);
 }
 
 .answer {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease-in;
 }
 
 .answer.show {
   max-height: 15vh;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.8s ease-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,12 +86,12 @@
   }
 
   .faq {
-    width: 50rem;
+    width: 75vw;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1248px) {
   .faq {
-    width: 65rem;
+    width: 50vw;
   }
 }
