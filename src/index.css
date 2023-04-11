@@ -2,12 +2,9 @@
 
 :root {
   --color-main: #c9ab91;
-  --color-secondary: #a4dbff;
-  --color-gradient: linear-gradient(
-    250deg,
-    rgb(107, 194, 252) 0%,
-    rgba(172, 209, 233, 1) 100%
-  );
+  --color-grey1: #eeeeee;
+  --color-grey2: #cdcdcd;
+  --color-black1: #191919;
 }
 
 html {
