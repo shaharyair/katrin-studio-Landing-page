@@ -1,6 +1,6 @@
 :root {
-  --circle-size: 7rem;
-  --icon-color: #25d366;
+  --circle-size: 6rem;
+  --color-whatsapp: #25d366;
 }
 
 .button__circle {
@@ -12,7 +12,7 @@
   top: 100%;
   left: 0;
   transform: translate(20%, -120%);
-  background-color: var(--icon-color);
+  background-color: var(--color-main);
   height: var(--circle-size);
   width: var(--circle-size);
   border-radius: 50%;
@@ -32,7 +32,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  :root {
-    --circle-size: 8rem;
+  .button__circle {
+    height: calc(var(--circle-size) + 1rem);
+    width: calc(var(--circle-size) + 1rem);
+  }
+
+  .button {
+    font-size: calc(var(--circle-size) - 2rem);
   }
 }
