@@ -8,6 +8,7 @@ import {
   AiOutlineEnvironment,
 } from "react-icons/ai";
 
+// setting className for navbarLinks
 function Footer() {
   const navbarLinks = {
     link: "footer__nav-link",

@@ -23,6 +23,7 @@ function Navbar() {
     setClick(false);
   };
 
+  // closing mobile menu whenever navbar__link class name is being clicked
   useEffect(() => {
     const handleScrollLinkClick = () => {
       closeMobileMenu();
@@ -41,6 +42,7 @@ function Navbar() {
     };
   }, []);
 
+  // closing mobile menu whenever the window width is larger then 1024px
   const handleResizeMobileMenu = () => {
     if (window.innerWidth > 1024) {
       setClick(false);
@@ -48,6 +50,7 @@ function Navbar() {
   };
   window.addEventListener("resize", handleResizeMobileMenu);
 
+  // setting classNames for navbarLinks
   const navbarLinks = {
     link: "navbar__link",
     main: "navbar__link link__main",
