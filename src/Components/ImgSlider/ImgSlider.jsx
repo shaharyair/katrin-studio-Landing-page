@@ -29,6 +29,7 @@ function ImgSlider() {
     setImgIndex(imgIndex);
   };
 
+  // sets a sliderwidth to 340 and changes the sliderwidth depends on the window size
   const [sliderWidth, setSliderWidth] = useState(340);
 
   const changeSliderWidth = () => {
