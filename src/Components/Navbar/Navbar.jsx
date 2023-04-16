@@ -1,12 +1,11 @@
 import React from "react";
 import "./Navbar.css";
+import NavbarLinks from "./NavbarLinks";
+import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import "../Hero/Hero";
-import "../Studio/Studio";
-import "../FAQ/FAQ";
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import {
+  FaBars,
+  FaTimes,
   FaInstagramSquare,
   FaFacebookSquare,
   FaWhatsappSquare,
@@ -24,12 +23,38 @@ function Navbar() {
     setClick(false);
   };
 
+  // closing mobile menu whenever navbar__link class name is being clicked
+  useEffect(() => {
+    const handleScrollLinkClick = () => {
+      closeMobileMenu();
+    };
+
+    const scrollLinks = document.querySelectorAll(".navbar__link");
+
+    scrollLinks.forEach((scrollLink) => {
+      scrollLink.addEventListener("click", handleScrollLinkClick);
+    });
+
+    return () => {
+      scrollLinks.forEach((scrollLink) => {
+        scrollLink.removeEventListener("click", handleScrollLinkClick);
+      });
+    };
+  }, []);
+
+  // closing mobile menu whenever the window width is larger then 1024px
   const handleResizeMobileMenu = () => {
     if (window.innerWidth > 1024) {
       setClick(false);
     }
   };
   window.addEventListener("resize", handleResizeMobileMenu);
+
+  // setting classNames for navbarLinks
+  const navbarLinks = {
+    link: "navbar__link",
+    main: "navbar__link link__main",
+  };
 
   return (
     <>
@@ -77,71 +102,7 @@ function Navbar() {
             )}
           </div>
           <ul className={click ? "navbar__menu mobile" : "navbar__menu"}>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='hero'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link link__main'
-                onClick={closeMobileMenu}
-              >
-                ראשי
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='studio'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                הסטודיו
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='faq'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                שאלות נפצות
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='studio'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                מנפצת המיתוסים
-              </ScrollLink>
-            </li>
-            <li className='navbar__item'>
-              <ScrollLink
-                to='studio'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className='navbar__link'
-                onClick={closeMobileMenu}
-              >
-                צור קשר
-              </ScrollLink>
-            </li>
+            <NavbarLinks navbarLinks={navbarLinks} />
           </ul>
         </div>
       </nav>
