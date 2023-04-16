@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link as ScrollLink } from "react-scroll";
+import NavbarLinks from "../Navbar/NavbarLinks";
 import {
   AiOutlineMail,
   AiOutlinePhone,
@@ -8,6 +9,10 @@ import {
 } from "react-icons/ai";
 
 function Footer() {
+  const navbarLinks = {
+    link: "footer__nav-link",
+  };
+
   return (
     <>
       <div className='footer'>
@@ -22,42 +27,7 @@ function Footer() {
             <h1 className='footer-title'>תפריט ניווט</h1>
             <nav>
               <ul>
-                <li>
-                  <ScrollLink
-                    to='hero'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className='footer__nav-link'
-                  >
-                    ראשי
-                  </ScrollLink>
-                </li>
-                <li>
-                  <ScrollLink
-                    to='studio'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className='footer__nav-link'
-                  >
-                    הסטודיו
-                  </ScrollLink>
-                </li>
-                <li>
-                  <ScrollLink
-                    to='faq'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className='footer__nav-link'
-                  >
-                    שאלות נפצות
-                  </ScrollLink>
-                </li>
+                <NavbarLinks navbarLinks={navbarLinks} />
               </ul>
             </nav>
           </div>
