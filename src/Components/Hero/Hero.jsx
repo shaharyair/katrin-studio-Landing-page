@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import bgVideo from "/Users/shaharyair/React Projects/Katrin Fitness landing page/katrin-project/src/assets/video2.mp4";
+import bgVideo from "/Users/shaharyair/React Projects/Katrin Landing Page Project/katrin-project-server/src/assets/video2.mp4";
 
 function Hero() {
   return (
