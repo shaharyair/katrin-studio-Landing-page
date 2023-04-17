@@ -15,6 +15,8 @@ const SignupForm = () => {
     });
   };
 
+  const [submitStatus, setSubmitStatus] = useState(null);
+
   const api = axios.create({
     baseURL: "http://localhost:3000",
   });
@@ -23,52 +25,65 @@ const SignupForm = () => {
     event.preventDefault();
     try {
       await api.post("/send-email", formData);
-      alert("נשלח בהצלחה!");
+      setSubmitStatus("resolved");
       setFormData({
         fullName: "",
         phoneNumber: "",
       });
     } catch (error) {
-      alert("קרתה שגיאה, אנא נסו שוב מאוחר יותר.");
+      setSubmitStatus("rejected");
       console.log(error);
     }
   };
 
   return (
-    <div className='form-box'>
-      <h1>הגיע הזמן לדאוג לעצמך!</h1>
-      <form onSubmit={handleSubmit} className='form-container'>
-        <div className='form-field'>
-          <input
-            type='text'
-            id='fullName'
-            name='fullName'
-            placeholder='שם מלא'
-            pattern='^[ א-ת]+$'
-            title='מספר הטלפון צריך לכלול רק אותיות.'
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-          />
+    <>
+      {submitStatus === "resolved" && (
+        <div className='form-submit-message'>
+          <h1>הודעה נשלחה בהצלחה!</h1>
+          <button onClick={() => setSubmitStatus(null)}>סגור</button>
         </div>
-        <div className='form-field'>
-          <input
-            type='tel'
-            id='phoneNumber'
-            name='phoneNumber'
-            placeholder='מספר טלפון'
-            pattern='^[0-9+-]{10,}$'
-            input='numeric'
-            title='מספר הטלפון צריך לכלול רק מספרים.'
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-          />
+      )}
+      {submitStatus === "rejected" && (
+        <div className='form-submit-message'>
+          <h1>קרתה תקלה, נסו שוב מאוחר יותר.</h1>
+          <button onClick={() => setSubmitStatus(null)}>סגור</button>
         </div>
-
-        <button type='submit'>שלח</button>
-      </form>
-    </div>
+      )}
+      <div className='form-box'>
+        <h1>הגיע הזמן לדאוג לעצמך!</h1>
+        <form onSubmit={handleSubmit} className='form-container'>
+          <div className='form-field'>
+            <input
+              type='text'
+              id='fullName'
+              name='fullName'
+              placeholder='שם מלא'
+              pattern='^[ א-ת]+$'
+              title='שם מלא צריך לכלול רק אותיות.'
+              value={formData.fullName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='form-field'>
+            <input
+              type='tel'
+              id='phoneNumber'
+              name='phoneNumber'
+              placeholder='מספר טלפון'
+              pattern='^[0-9-]{10,}$'
+              input='numeric'
+              title='מספר הטלפון צריך לכלול רק מספרים.'
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button type='submit'>שלח</button>
+        </form>
+      </div>
+    </>
   );
 };
 
