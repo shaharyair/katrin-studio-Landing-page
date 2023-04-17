@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./SignupForm.css";
 
 const SignupForm = () => {
@@ -14,12 +15,23 @@ const SignupForm = () => {
     });
   };
 
-  const handleSubmit = (event) => {
-    // event.preventDefault();
-    // setFormData({
-    //   fullName: "",
-    //   phoneNumber: "",
-    // });
+  const api = axios.create({
+    baseURL: "http://localhost:3000",
+  });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await api.post("/send-email", formData);
+      alert("נשלח בהצלחה!");
+      setFormData({
+        fullName: "",
+        phoneNumber: "",
+      });
+    } catch (error) {
+      alert("קרתה שגיאה, אנא נסו שוב מאוחר יותר.");
+      console.log(error);
+    }
   };
 
   return (
@@ -43,13 +55,14 @@ const SignupForm = () => {
             id='phoneNumber'
             name='phoneNumber'
             placeholder='מספר טלפון'
-            pattern='[\d-]*'
+            pattern='^[0-9+-]{10,}$'
             input='numeric'
             value={formData.phoneNumber}
             onChange={handleChange}
             required
           />
         </div>
+
         <button type='submit'>שלח</button>
       </form>
     </div>
