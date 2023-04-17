@@ -44,6 +44,8 @@ const SignupForm = () => {
             id='fullName'
             name='fullName'
             placeholder='שם מלא'
+            pattern='^[ א-ת]+$'
+            title='מספר הטלפון צריך לכלול רק אותיות.'
             value={formData.fullName}
             onChange={handleChange}
             required
@@ -57,6 +59,7 @@ const SignupForm = () => {
             placeholder='מספר טלפון'
             pattern='^[0-9+-]{10,}$'
             input='numeric'
+            title='מספר הטלפון צריך לכלול רק מספרים.'
             value={formData.phoneNumber}
             onChange={handleChange}
             required
