@@ -15,7 +15,7 @@ const SignupForm = () => {
     });
   };
 
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitStatus, setSubmitStatus] = useState("rejected");
 
   const api = axios.create({
     baseURL: "http://localhost:3000",
@@ -59,8 +59,8 @@ const SignupForm = () => {
               id='fullName'
               name='fullName'
               placeholder='שם מלא'
-              pattern='^[ א-ת]+$'
-              title='שם מלא צריך לכלול רק אותיות.'
+              pattern='^[a-zA-Z א-ת]+$'
+              title='שם מלא צריך לכלול רק אותיות בעברית או באנגלית.'
               value={formData.fullName}
               onChange={handleChange}
               required

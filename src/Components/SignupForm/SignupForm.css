@@ -1,5 +1,5 @@
 :root {
-  --signup-fontSize: 1.7rem;
+  --signup-fontSize: 1.6rem;
   --color-input: #f0f0f0;
 }
 
@@ -80,7 +80,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   max-width: 50rem;
-  height: 50%;
+  height: 25%;
   max-height: 15rem;
   border: 0.2rem solid #333;
   background-color: rgba(255, 255, 255, 0.95);
@@ -90,7 +90,7 @@
 
 .form-submit-message > h1 {
   direction: rtl;
-  font-size: calc(var(--signup-fontSize) + 1rem);
+  font-size: calc(var(--signup-fontSize) + 0.8rem);
 }
 
 @media only screen and (min-width: 768px) {
