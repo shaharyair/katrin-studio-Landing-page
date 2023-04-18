@@ -21,7 +21,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 34rem;
+  width: 85%;
+  max-width: 35rem;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
@@ -46,7 +47,8 @@
   direction: rtl;
 }
 
-.form-container > button[type="submit"] {
+.form-container > button[type="submit"],
+.form-submit-message > button {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   border: none;
@@ -57,13 +59,91 @@
   transition: background-color 0.3s ease-out;
 }
 
-.form-container > button[type="submit"]:hover {
+.form-submit-message > button {
+  font-size: calc(var(--signup-fontSize) + 0.3rem);
+}
+
+.form-container > button[type="submit"]:hover,
+.form-submit-message > button:hover {
   background-color: #555;
 }
 
 .form-box > h1 {
   color: #fff;
   font-size: calc(var(--signup-fontSize) + 1.5rem);
+}
+
+.form-submit-message {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 50rem;
+  height: 25%;
+  max-height: 15rem;
+  border: 0.15rem solid var(--color-black1);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  z-index: 9999;
+  animation: fadeIn ease 0.7s forwards;
+  -webkit-animation: fadeIn ease 0.7s forwards;
+  -moz-animation: fadeIn ease 0.7s forwards;
+  -o-animation: fadeIn ease 0.7s forwards;
+  -ms-animation: fadeIn ease 0.7s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-submit-message > h1 {
+  direction: rtl;
+  font-size: calc(var(--signup-fontSize) + 0.8rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -74,7 +154,7 @@
 
   .form-container {
     flex-direction: row-reverse;
-    width: 70rem;
+    max-width: 70rem;
     padding: 2rem;
     gap: 1rem;
   }
@@ -84,11 +164,8 @@
     margin: initial;
   }
 
+  .form-container > button[type="submit"],
   .form-field > input {
-    font-size: calc(var(--signup-fontSize) + 0.2rem);
-  }
-
-  .form-container > button[type="submit"] {
     font-size: calc(var(--signup-fontSize) + 0.2rem);
   }
 }
