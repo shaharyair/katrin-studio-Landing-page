@@ -12,7 +12,7 @@
 }
 
 .faq {
-  width: 90vw;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -45,10 +45,7 @@
 .title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-size: calc(var(--faq-fontsize) + 0.5rem);
-  letter-spacing: 0.08rem;
+  align-items: start;
 }
 
 .title > h1,
@@ -63,6 +60,8 @@
 
 .faq-icon {
   transition: transform 0.5s ease;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 .faq-icon.flip {
@@ -72,6 +71,7 @@
 .answer {
   overflow: hidden;
   max-height: 0;
+  max-width: 90%;
   transition: max-height 0.5s ease-in;
 }
 
@@ -82,16 +82,10 @@
 
 @media only screen and (min-width: 768px) {
   :root {
-    --faq-fontsize: 1.8rem;
+    --faq-fontsize: 2rem;
   }
 
   .faq {
-    width: 75vw;
-  }
-}
-
-@media only screen and (min-width: 1248px) {
-  .faq {
-    width: 50vw;
+    max-width: 90rem;
   }
 }
