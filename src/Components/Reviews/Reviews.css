@@ -7,16 +7,18 @@
   height: 100%;
   background-color: #f5f5f5;
   padding: 2rem 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reviews-container {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .reviews-container > h1 {
@@ -31,29 +33,15 @@
   }
   .reviews-container {
     flex-direction: row;
-    gap: 5rem;
   }
   .reviews-container > h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     order: 2;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .reviews-container > h1 {
-    word-wrap: break-all;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
   .reviews-container {
-    max-width: 65%;
-    gap: 15rem;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .reviews-container {
-    max-width: 55%;
+    gap: 5rem;
   }
 }
