@@ -15,7 +15,7 @@ const SignupForm = () => {
     });
   };
 
-  const [submitStatus, setSubmitStatus] = useState("resolved");
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
     baseURL: "http://localhost:3000",
@@ -55,6 +55,20 @@ const SignupForm = () => {
         <form onSubmit={handleSubmit} className='form-container'>
           <div className='form-field'>
             <input
+              type='tel'
+              id='phoneNumber'
+              name='phoneNumber'
+              placeholder='מספר טלפון'
+              pattern='^[0-9-]{10,}$'
+              input='numeric'
+              title='מספר הטלפון צריך לכלול רק מספרים ומינימום של 10 ספרות.'
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='form-field'>
+            <input
               type='text'
               id='fullName'
               name='fullName'
@@ -62,20 +76,6 @@ const SignupForm = () => {
               pattern='^[a-zA-Z א-ת]+$'
               title='שם מלא צריך לכלול רק אותיות בעברית או באנגלית.'
               value={formData.fullName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className='form-field'>
-            <input
-              type='tel'
-              id='phoneNumber'
-              name='phoneNumber'
-              placeholder='מספר טלפון'
-              pattern='^[0-9-]{10,}$'
-              input='numeric'
-              title='מספר הטלפון צריך לכלול רק מספרים.'
-              value={formData.phoneNumber}
               onChange={handleChange}
               required
             />
