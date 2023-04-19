@@ -34,11 +34,14 @@
   width: 80vw;
   height: 85vw;
   border-radius: 2.5rem;
+  max-width: 35rem;
+  max-height: 35rem;
 }
 
 .benefit:nth-child(2) > img {
   height: 120vw;
   width: 80vw;
+  max-height: 50rem;
 }
 
 .benefits__text-container {
@@ -71,7 +74,7 @@
   }
 
   .benefits-container {
-    max-width: 85%;
+    max-width: 80%;
     gap: 3rem;
     flex-direction: row;
   }
@@ -93,40 +96,5 @@
   .benefit:nth-child(2) > img {
     height: 40vw;
     width: 25vw;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  :root {
-    --benefits-fontSize: 3rem;
-  }
-
-  .benefits {
-    padding: 8rem 0;
-  }
-
-  .benefits-container {
-    max-width: 65%;
-    gap: 3rem;
-    flex-direction: row;
-  }
-
-  .benefit {
-    gap: 3rem;
-  }
-
-  .benefits__text-container {
-    gap: 1rem;
-    padding: 0;
-  }
-
-  .benefit > img {
-    height: 18vw;
-    width: 18vw;
-  }
-
-  .benefit:nth-child(2) > img {
-    height: 25vw;
-    width: 18vw;
   }
 }
