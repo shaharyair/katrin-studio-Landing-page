@@ -9,34 +9,40 @@ function Benefits() {
   return (
     <>
       <div className='benefits'>
+        <h1>
+          <span>בסטודיו של קאתרין</span> - אנחנו עובדים בשיטה שמובילה להצלחה
+        </h1>
         <div className='benefits-container'>
           <div className='benefit'>
             <img src={Pic1} alt='/' />
             <div className='benefits__text-container'>
-              <h1 className='title'>ליווי אישי להצלחה</h1>
-              <p className='content'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
-                repellendus?
+              <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+              <p className='benefits-content'>
+                המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
+                ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
+                והירכיים
               </p>
             </div>
           </div>
           <div className='benefit'>
             <img src={Pic2} alt='/' />
             <div className='benefits__text-container'>
-              <h1 className='title'>ליווי אישי להצלחה</h1>
-              <p className='content'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
-                repellendus?
+              <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+              <p className='benefits-content'>
+                המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
+                ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
+                והירכיים
               </p>
             </div>
           </div>
           <div className='benefit'>
             <img src={Pic3} alt='/' />
             <div className='benefits__text-container'>
-              <h1 className='title'>ליווי אישי להצלחה</h1>
-              <p className='content'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
-                repellendus?
+              <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+              <p className='benefits-content'>
+                המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
+                ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
+                והירכיים
               </p>
             </div>
           </div>
