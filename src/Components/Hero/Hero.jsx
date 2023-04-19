@@ -10,11 +10,10 @@ function Hero() {
         <video
           className='hero__video'
           src={bgVideo}
-          type='video/mp4'
-          autoPlay='autoplay'
-          playsInLine='playsinline'
-          loop='true'
-          muted='true'
+          muted
+          playsInline
+          loop
+          autoPlay
         />
 
         <div className='hero__text-container'>
