@@ -11,13 +11,17 @@
   max-width: 90%;
 }
 
+.gallery-head > h1 {
+  color: var(--color-main);
+}
+
 .gallery-container {
   width: 95%;
   max-width: 160rem;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 17rem);
-  grid-template-rows: repeat(auto-fit, 17rem);
+  grid-template-columns: repeat(auto-fit, 14rem);
+  grid-template-rows: repeat(auto-fit, 14rem);
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -27,8 +31,8 @@
 .gallery-container > img {
   width: 50vw;
   height: 50vw;
-  max-width: 17rem;
-  max-height: 17rem;
+  max-width: 14rem;
+  max-height: 14rem;
   object-fit: cover;
   object-position: center;
 }
