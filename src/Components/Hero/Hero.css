@@ -3,12 +3,12 @@
 }
 
 .hero {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .hero__video {
@@ -16,17 +16,33 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .hero__text-container {
   position: absolute;
-  top: 42%;
+  top: 50%;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 70%;
+  height: 75%;
+  width: 80%;
+  max-width: 80rem;
   border: solid 1.5rem rgba(#000, 0.2);
   text-align: center;
   transition: transform 0.5s ease-in-out;
@@ -37,10 +53,10 @@
 }
 
 .hero__text-head {
-  font-weight: 400;
-  font-size: calc(var(--hero-fontSize) + 1rem);
+  font-weight: 500;
+  font-size: 3rem;
   color: white;
-  text-shadow: 0 0.3rem 0.6rem black;
+  text-shadow: 0 5px 10px black;
 }
 
 .hero__text-head > h1 {
@@ -50,10 +66,10 @@
 .hero__text {
   text-align: center;
   direction: rtl;
-  font-size: calc(var(--hero-fontSize) + 0.5rem);
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 600;
   color: white;
-  text-shadow: 0 0.3rem 0.6rem black;
+  text-shadow: 0 0 10px black;
 }
 
 .hero__buttons-container {
@@ -64,6 +80,7 @@
 }
 
 .hero__button {
+  padding: 0.8rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,40 +88,35 @@
   white-space: nowrap;
   font-size: calc(var(--hero-fontSize) - 1rem);
   font-weight: 400;
-  padding: 1rem 1.5rem;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border: 0.15rem solid white;
   color: white;
   gap: 1rem;
   direction: rtl;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
-  text-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 10px 2px black;
 }
 
 .hero__button:hover {
   background-color: var(--color-main);
+  color: black;
   transition: all 0.5s ease-in-out;
 }
 
-@media only screen and (min-width: 768px) {
-  :root {
-    --hero-fontSize: 3.5rem;
-  }
-  .hero__text-container {
-    height: 60%;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
-  :root {
-    --hero-fontSize: 4rem;
-  }
   .hero__text-container {
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    height: 75%;
+    height: 80%;
+  }
+
+  .hero__text-head {
+    font-size: 4rem;
+  }
+
+  .hero__text {
+    font-size: 4rem;
   }
 
   .hero__buttons-container {
@@ -112,7 +124,7 @@
   }
 
   .hero__button {
-    padding: 1.5rem;
-    gap: 1.5rem;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
   }
 }
