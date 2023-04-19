@@ -29,6 +29,7 @@
 
 .reviews-container-text > h2 {
   color: white;
+  font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 768px) {
