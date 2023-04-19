@@ -23,7 +23,7 @@
 
 .form-container > h1 {
   color: #fff;
-  font-size: calc(var(--signup-fontSize) + 1.5rem);
+  font-size: calc(var(--signup-fontSize) + 1rem);
 }
 
 .form-container-input {
@@ -170,6 +170,10 @@
   .form-container {
     flex-direction: row;
     gap: 5rem;
+  }
+
+  .form-container > h1 {
+    font-size: calc(var(--signup-fontSize) + 1.5rem);
   }
 
   .form-container-input {

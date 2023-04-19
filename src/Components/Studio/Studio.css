@@ -57,7 +57,7 @@
 }
 
 .studio__text-container > h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: calc(var(--studio-fontSize) + 2.5rem);
   color: pink;
   /* text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
@@ -69,6 +69,9 @@
   line-height: calc(var(--studio-fontSize) + 1rem);
 }
 @media only screen and (min-width: 768px) {
+  .studio {
+    padding: 5rem 0;
+  }
   .studio__container {
     flex-direction: row-reverse;
     gap: 5rem;
