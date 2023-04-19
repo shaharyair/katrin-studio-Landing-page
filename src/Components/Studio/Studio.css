@@ -6,22 +6,42 @@
   position: relative;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(/src/assets/gymexample.jpg) center no-repeat;
-  background-size: cover;
-  padding: 6rem 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4rem 0;
 }
 
-.studio::after {
+.studio::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
+  background: url(/src/assets/gymexample.jpg) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.studio__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 100rem;
+}
+
+.studio__container > img {
+  width: 70vw;
+  height: 60vw;
+  max-width: 40rem;
+  max-height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 5px 10px black;
 }
 
 .studio__text-container {
@@ -30,38 +50,32 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  z-index: 1;
   direction: rtl;
-  max-width: 80%;
   gap: 1rem;
-  /* transition: max-width 1s ease-in-out; */
+  text-align: center;
+  color: white;
 }
 
 .studio__text-container > h1 {
   font-weight: 400;
   font-size: calc(var(--studio-fontSize) + 2.5rem);
-  color: var(--color-main);
-  text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
-    1px 1px 2px #000;
+  color: pink;
+  /* text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
+    1px 1px 2px #000; */
 }
 
 .studio__text-container > p {
-  font-weight: 400;
   font-size: calc(var(--studio-fontSize));
-  line-height: calc(var(--studio-fontSize) + 1.2rem);
+  line-height: calc(var(--studio-fontSize) + 1rem);
 }
-
 @media only screen and (min-width: 768px) {
-  :root {
-    --studio-fontSize: 3rem;
+  .studio__container {
+    flex-direction: row-reverse;
+    gap: 5rem;
   }
-  .studio__text-container {
-    max-width: 75%;
-  }
-}
 
-@media only screen and (min-width: 1248px) {
   .studio__text-container {
-    max-width: 55%;
+    text-align: right;
+    align-items: start;
   }
 }
