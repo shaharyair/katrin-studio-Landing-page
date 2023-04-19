@@ -1,6 +1,6 @@
 .about-box {
   position: relative; /* Add position relative to enable pseudo-element */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   direction: rtl;
   padding-top: 3rem;
   overflow: hidden;
@@ -41,7 +41,7 @@
   gap: 3rem;
 }
 
-.about-container > img {
+.katrin-img-wrap > img {
   width: 40vw;
   max-width: 28rem;
 }
@@ -67,7 +67,7 @@
     align-items: start;
   }
 
-  .about-container > img {
+  .katrin-img-wrap > img {
     transform: translateY(10%);
   }
 }

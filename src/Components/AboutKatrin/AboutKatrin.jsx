@@ -24,7 +24,9 @@ const AboutKatrin = () => {
               </p>
             </div>
           </div>
-          <img src='/src/assets/girlexample.png' alt='/' />
+          <div className='katrin-img-wrap'>
+            <img src='/src/assets/girlexample.png' alt='/' />
+          </div>
         </div>
       </div>
     </>
