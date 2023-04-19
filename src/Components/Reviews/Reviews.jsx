@@ -1,13 +1,15 @@
 import React from "react";
 import "./Reviews.css";
-import ImgSlider from "../ImgSlider/ImgSlider";
+import Carousel from "../Carousel/Carousel";
 
 function Reviews() {
   return (
     <>
       <div className='reviews-box'>
-        <h1>מתאמנות מספרות</h1>
-        <ImgSlider className='reviews-imgslider' />
+        <div className='reviews-container'>
+          <h1>מתאמנות מספרות</h1>
+          <Carousel />
+        </div>
       </div>
     </>
   );

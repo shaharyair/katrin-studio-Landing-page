@@ -9,6 +9,7 @@ import Benefits from "./Components/Benefits/Benefits";
 import SignupForm from "./Components/SignupForm/SignupForm";
 import Footer from "./Components/Footer/Footer";
 import Reviews from "./Components/Reviews/Reviews";
+import Carousel from "./Components/Carousel/Carousel";
 
 function App() {
   return (
