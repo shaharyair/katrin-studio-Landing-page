@@ -9,20 +9,23 @@ import Benefits from "./Components/Benefits/Benefits";
 import SignupForm from "./Components/SignupForm/SignupForm";
 import Footer from "./Components/Footer/Footer";
 import Reviews from "./Components/Reviews/Reviews";
-import Carousel from "./Components/Carousel/Carousel";
+import AboutKatrin from "./Components/AboutKatrin/AboutKatrin";
+import BeforeAndAfter from "./Components/BeforeAndAfter/BeforeAndAfter";
 
 function App() {
   return (
     <>
-      <WhatsappButton />
       <Navbar />
       <Hero />
       <Benefits />
+      <AboutKatrin />
+      <BeforeAndAfter />
       <Studio />
       <FAQ />
       <Reviews />
       <SignupForm />
       <Footer />
+      <WhatsappButton />
     </>
   );
 }
