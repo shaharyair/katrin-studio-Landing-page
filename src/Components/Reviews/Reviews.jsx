@@ -7,7 +7,10 @@ function Reviews() {
     <>
       <div className='reviews-box'>
         <div className='reviews-container'>
-          <h1>מתאמנות מספרות</h1>
+          <div className='reviews-container-text'>
+            <h1>מתאמנות מספרות</h1>
+            <h2>תמיד כיף לשמוע לגבי תהליך של המתאמנות</h2>
+          </div>
           <Carousel />
         </div>
       </div>
