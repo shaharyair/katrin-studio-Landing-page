@@ -16,7 +16,7 @@ const BeforeAndAfter = () => {
   ];
 
   return (
-    <div className='gallery-box'>
+    <div className='gallery-box' id='beforeandafter'>
       <div className='gallery-head'>
         <h1>לפני ואחרי</h1>
         <p>

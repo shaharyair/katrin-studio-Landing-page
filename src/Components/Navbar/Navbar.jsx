@@ -101,7 +101,7 @@ function Navbar() {
               <FaBars className='mobile-icon' />
             )}
           </div>
-          <ul className={click ? "navbar__menu mobile" : "navbar__menu"}>
+          <ul className={click ? "navbar__menu navbar-mobile" : "navbar__menu"}>
             <NavbarLinks navbarLinks={navbarLinks} />
           </ul>
         </div>

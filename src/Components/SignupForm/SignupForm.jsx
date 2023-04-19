@@ -54,7 +54,7 @@ const SignupForm = () => {
           </div>
         </div>
       )}
-      <div className='form-box'>
+      <div className='form-box' id='signupform'>
         <div className='form-container'>
           <h1>הגיע הזמן לדאוג לעצמך!</h1>
           <form onSubmit={handleSubmit} className='form-container-input'>
