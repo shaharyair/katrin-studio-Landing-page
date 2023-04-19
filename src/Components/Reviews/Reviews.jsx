@@ -5,7 +5,7 @@ import Carousel from "../Carousel/Carousel";
 function Reviews() {
   return (
     <>
-      <div className='reviews-box'>
+      <div className='reviews-box' id='reviews'>
         <div className='reviews-container'>
           <div className='reviews-container-text'>
             <h1>מתאמנות מספרות</h1>

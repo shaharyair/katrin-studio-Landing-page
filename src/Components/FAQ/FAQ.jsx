@@ -38,7 +38,7 @@ const FAQ = () => {
 
   return (
     <>
-      <div className='faq-box'>
+      <div className='faq-box' id='faq-box'>
         <div className='faq'>
           <h1>זמן לשאלות</h1>
           {questions.map((item, i) => (
