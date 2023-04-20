@@ -7,16 +7,8 @@ function Hero() {
   return (
     <>
       <div className='hero' id='hero'>
-        {/* <video
-          className='hero__video'
-          src={bgVideo}
-          muted
-          playsInline
-          loop
-          autoPlay
-        /> */}
         <img src={pic} alt='' />
-        <div className='hero__text-container'>
+        <div className='hero__text-container reveal fade-bottom'>
           <div className='hero__text-head'>
             <h1>הסטודיו של קאתרין</h1>
           </div>
