@@ -23,8 +23,8 @@ function Studio() {
   return (
     <>
       <div className='studio' id='studio'>
-        <div className='studio__container'>
-          <div className='studio__text-container reveal-anim fade-bottom'>
+        <div className='studio__container  reveal-anim fade-bottom'>
+          <div className='studio__text-container'>
             <h1>הסטודיו</h1>
             <p>
               פילאטיס היא צורת פעילות גופנית שפותחה בתחילת המאה ה-20 על ידי
@@ -40,11 +40,7 @@ function Studio() {
               שרוצות
             </p>
           </div>
-          <img
-            src='/src/assets/gymexample.jpg'
-            alt=''
-            className='reveal-anim fade-bottom'
-          />
+          <img src='/src/assets/gymexample.jpg' alt='' />
         </div>
       </div>
     </>
