@@ -2,11 +2,29 @@ import React from "react";
 import "./Studio.css";
 
 function Studio() {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal-anim");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 25;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active-anim");
+      } else {
+        reveals[i].classList.remove("active-anim");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
+  // To check the scroll position on page load
+
   return (
     <>
       <div className='studio' id='studio'>
         <div className='studio__container'>
-          <div className='studio__text-container'>
+          <div className='studio__text-container reveal-anim fade-bottom'>
             <h1>הסטודיו</h1>
             <p>
               פילאטיס היא צורת פעילות גופנית שפותחה בתחילת המאה ה-20 על ידי
@@ -22,7 +40,11 @@ function Studio() {
               שרוצות
             </p>
           </div>
-          <img src='/src/assets/gymexample.jpg' alt='' />
+          <img
+            src='/src/assets/gymexample.jpg'
+            alt=''
+            className='reveal-anim fade-bottom'
+          />
         </div>
       </div>
     </>
