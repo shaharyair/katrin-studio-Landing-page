@@ -41,9 +41,17 @@
   gap: 3rem;
 }
 
-.katrin-img-wrap > img {
+.about-img {
+  opacity: 0;
   width: 40vw;
   max-width: 28rem;
+  transform: translateX(25%);
+}
+
+.about-img.about-fade-right {
+  opacity: 1;
+  transition: transform 1.2s ease, opacity 1.2s ease;
+  transform: translateX(0);
 }
 
 .about-head > h2 {
@@ -58,7 +66,7 @@
 @media only screen and (min-width: 768px) {
   .about-container {
     flex-direction: row-reverse;
-    gap: 5rem;
+    gap: 10rem;
     max-width: 100rem;
   }
 
@@ -67,8 +75,12 @@
     align-items: start;
   }
 
-  .katrin-img-wrap > img {
-    transform: translateY(10%);
+  .about-img {
+    transform: translate(25%, 10%);
+  }
+
+  .about-img.about-fade-right {
+    transform: translate(0%, 10%);
   }
 }
 
