@@ -34,6 +34,11 @@
   opacity: 0;
 }
 
+.benefits-container.benefits-fade-center {
+  opacity: 1;
+  transition: opacity 1.2s ease;
+}
+
 .benefit {
   display: flex;
   justify-content: center;
@@ -70,11 +75,6 @@
 
 .benefits-content {
   font-size: calc(var(--benefits-fontSize) - 1rem);
-}
-
-.benefits-scale-forwards {
-  opacity: 1;
-  transition: opacity 1.2s ease;
 }
 
 @media only screen and (min-width: 768px) {

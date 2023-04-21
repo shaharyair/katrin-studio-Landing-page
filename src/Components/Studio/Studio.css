@@ -33,7 +33,7 @@
   gap: 3rem;
   max-width: 100rem;
   opacity: 0;
-  transform: translateY(15%);
+  transform: translateY(12%);
 }
 
 .studio__container > img {
@@ -79,7 +79,7 @@
 
 .studio__container.studio-fade-bottom {
   opacity: 1;
-  transition: opacity 1s ease-in, transform 1s ease-in;
+  transition: opacity 1.2s ease-in, transform 1s ease-in;
   transform: translateY(0);
 }
 
