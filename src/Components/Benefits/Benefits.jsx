@@ -21,7 +21,7 @@ function Benefits() {
         <ScrollTrigger onEnter={handleEnter}>
           <div
             className={`benefits-container ${
-              isVisible ? "benefits-scale-forwards" : ""
+              isVisible ? "benefits-fade-center" : ""
             }`}
           >
             <div className='benefit'>
