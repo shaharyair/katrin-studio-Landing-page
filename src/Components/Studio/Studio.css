@@ -32,6 +32,8 @@
   align-items: center;
   gap: 3rem;
   max-width: 100rem;
+  opacity: 0;
+  transform: translateY(15%);
 }
 
 .studio__container > img {
@@ -75,23 +77,10 @@
   line-height: calc(var(--studio-fontSize) + 1rem);
 }
 
-.reveal-anim {
-  opacity: 0;
-}
-
-.active-anim.fade-bottom {
-  animation: fade-bottom 1s ease forwards;
-}
-
-@keyframes fade-bottom {
-  0% {
-    opacity: 0;
-    transform: translateY(15%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.studio__container.studio-fade-bottom {
+  opacity: 1;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+  transform: translateY(0);
 }
 
 @media only screen and (min-width: 768px) {
