@@ -25,7 +25,7 @@ const NavbarLinks = (props) => {
           duration={500}
           className={props.navbarLinks.link}
         >
-          קצת עלי
+          קצת עליי
         </ScrollLink>
       </li>
       <li>

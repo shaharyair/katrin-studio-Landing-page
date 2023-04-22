@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 35rem;
+  max-width: 30rem;
   padding: 2rem;
   border-radius: 0.5rem;
   background-color: #fff;
@@ -41,7 +41,6 @@
 
 .form-field {
   display: grid;
-  direction: rtl;
   margin-bottom: 1.5rem;
   width: 100%;
 }
