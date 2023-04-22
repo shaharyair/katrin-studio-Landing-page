@@ -13,7 +13,7 @@
 
 .benefits > h1 {
   font-weight: 400;
-  font-size: calc(var(--benefits-fontSize) - 0.5rem);
+  font-size: calc(var(--benefits-fontSize));
   text-align: center;
   margin: auto auto 4rem auto;
   width: 80%;

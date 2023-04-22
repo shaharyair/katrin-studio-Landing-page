@@ -101,7 +101,7 @@
   width: 85%;
   height: 25%;
   max-width: 45rem;
-  max-height: 25rem;
+  max-height: 22rem;
   gap: 2rem;
   background-color: black;
   border: 0.05rem solid white;
@@ -115,8 +115,13 @@
   -ms-animation: fadeIn ease 0.7s forwards;
 }
 
-.form-submit > h1 {
+.form-submit > h1,
+.form-submit > p {
   max-width: 95%;
+}
+
+.form-submit > p {
+  font-size: calc(var(--signup-fontSize) + 0.8rem);
 }
 
 @keyframes fadeIn {

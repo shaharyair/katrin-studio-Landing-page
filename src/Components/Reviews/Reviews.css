@@ -37,8 +37,10 @@
     padding: 4rem 0;
   }
   .reviews-container {
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    gap: 20rem;
+    /* gap: 20rem; */
   }
 
   .reviews-container-text {

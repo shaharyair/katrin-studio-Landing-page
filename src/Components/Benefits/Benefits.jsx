@@ -16,7 +16,7 @@ function Benefits() {
     <>
       <div className='benefits'>
         <h1>
-          <span>בסטודיו של קאתרין</span> - אנחנו עובדים בשיטה שמובילה להצלחה
+          את הסטודיו מנחים <span>3 ערכיים עיקריים: </span>
         </h1>
         <ScrollTrigger onEnter={handleEnter}>
           <div
@@ -27,7 +27,7 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic1} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>משפחתיות</h1>
                 <p className='benefits-content'>
                   המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
                   ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
@@ -38,7 +38,7 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic2} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>מקצועיות</h1>
                 <p className='benefits-content'>
                   המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
                   ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
@@ -49,7 +49,7 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic3} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>ליווי אישי וצמוד</h1>
                 <p className='benefits-content'>
                   המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
                   ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן

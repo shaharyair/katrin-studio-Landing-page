@@ -14,15 +14,16 @@ function Hero() {
               <h1>הסטודיו של קאתרין</h1>
             </div>
             <div className='hero__text'>
-              <p>להרגיש בבית</p>
-              <p>להתמלא בעוצמה</p>
+              <h2></h2>
+              <p>תזונה | אימונים | תוצאות</p>
+              <p>..ככה פשוט</p>
             </div>
             <div className='hero__buttons-container'>
               <a href='https://wa.me/972556620441' className='hero__button'>
-                לפרטים נוספים <FaWhatsapp className='hero__button-icon' />
+                אפשר גם ב Whatsapp <FaWhatsapp className='hero__button-icon' />
               </a>
               <a href='tel:+972556620441' className='hero__button'>
-                חייגו אלינו <FaPhoneAlt className='hero__button-icon' />
+                חייגי אליי <FaPhoneAlt className='hero__button-icon' />
               </a>
             </div>
           </div>

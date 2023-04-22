@@ -19,10 +19,7 @@ const BeforeAndAfter = () => {
     <div className='gallery-box' id='beforeandafter'>
       <div className='gallery-head'>
         <h1>לפני ואחרי</h1>
-        <p>
-          הכל מתחיל בהחלטה אחת – רצון אמיתי לעשות שינוי, ועם תוצאות? אי אפשר
-          להתווכח
-        </p>
+        <p>הכל מתחיל בהחלטה אחת – רצון אמיתי לעשות שינוי</p>
       </div>
       <div className='gallery-container'>
         {images.map((img, i) => (

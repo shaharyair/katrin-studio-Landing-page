@@ -5,9 +5,37 @@
 .hero {
   height: 100%;
   width: 100%;
-  padding: 20rem 0;
-  background: url("/src/assets/gymexample.jpg") center;
+  padding: 15rem 0 10rem 0;
+  position: relative;
+  background: rgb(135, 102, 108);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(135, 102, 108, 1) 0%,
+    rgba(255, 192, 203, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(135, 102, 108, 1) 0%,
+    rgba(255, 192, 203, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(135, 102, 108, 1) 0%,
+    rgba(255, 192, 203, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#87666c",endColorstr="#ffc0cb",GradientType=1);
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/src/assets/gymexample.jpg") center no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 .hero__container {
@@ -30,8 +58,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height: 20rem;
-  gap: 5rem;
+  gap: 6rem;
   text-align: center;
   animation: fade-left 1.2s ease-in;
 }
@@ -49,11 +76,10 @@
 
 .hero__text {
   text-align: center;
-  direction: rtl;
-  font-size: 3rem;
   font-weight: 600;
   color: white;
   text-shadow: 0 0 10px black;
+  font-size: 3.5rem;
 }
 
 .hero__buttons-container {
@@ -108,12 +134,8 @@
   }
 } */
 
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .hero__text-container {
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    height: 80%;
   }
 
   .hero > img {
@@ -121,20 +143,20 @@
     left: 30%;
   }
 
-  .hero__text-head {
-    font-size: 4rem;
+  /* .hero__text-head {
+    font-size: 3rem;
   }
 
   .hero__text {
-    font-size: 4rem;
-  }
+    font-size: 3.5rem;
+  } */
 
   .hero__buttons-container {
     gap: 3rem;
   }
 
   .hero__button {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem 1.5rem;
   }
-} */
+}

@@ -2,7 +2,7 @@
   position: relative; /* Add position relative to enable pseudo-element */
   background-color: rgba(0, 0, 0, 0.7);
   direction: rtl;
-  padding-top: 3rem;
+  padding: 3rem 0 2rem 0;
   overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
   flex-direction: column;
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.1rem;
   gap: 3rem;
 }
 
@@ -54,8 +54,14 @@
   transform: translateX(0);
 }
 
+.about-head > h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
 .about-head > h2 {
   color: pink;
+  font-size: 3.5rem;
 }
 
 .about-text {

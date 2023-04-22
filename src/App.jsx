@@ -20,9 +20,9 @@ function App() {
       <Benefits />
       <AboutKatrin />
       <BeforeAndAfter />
+      <Reviews />
       <Studio />
       <FAQ />
-      <Reviews />
       <SignupForm />
       <Footer />
       <WhatsappButton />

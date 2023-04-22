@@ -73,7 +73,7 @@
 }
 
 .studio__text-container > p {
-  font-size: calc(var(--studio-fontSize));
+  font-size: calc(var(--studio-fontSize) + 0.1rem);
   line-height: calc(var(--studio-fontSize) + 1rem);
 }
 
