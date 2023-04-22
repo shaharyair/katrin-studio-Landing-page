@@ -39,6 +39,8 @@
 }
 
 .hero__container {
+  margin: auto;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +97,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-size: calc(var(--hero-fontSize) - 1rem);
   font-weight: 400;
   text-decoration: none;
