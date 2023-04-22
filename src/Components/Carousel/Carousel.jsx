@@ -6,18 +6,16 @@ import "./Carousel.css"; // Import custom styles
 
 const Carousel = () => {
   const carouselSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
   };
 
   const images = [
-    { url: "/src/assets/benefits1.jpg" },
-    { url: "/src/assets/benefits2.jpg" },
-    { url: "/src/assets/benefits3.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
+    { url: "/src/assets/2.png" },
+    { url: "/src/assets/3.png" },
+    { url: "/src/assets/4.png" },
   ];
 
   return (
