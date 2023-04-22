@@ -8,8 +8,8 @@ function Reviews() {
       <div className='reviews-box' id='reviews'>
         <div className='reviews-container'>
           <div className='reviews-container-text'>
-            <h1>מתאמנות מספרות</h1>
-            <h2>תמיד כיף לשמוע לגבי תהליך של המתאמנות</h2>
+            <h1>הכי גאה בהן!</h1>
+            <h2>המתאמנות שלי משוויצות בתוצאות</h2>
           </div>
           <Carousel />
         </div>

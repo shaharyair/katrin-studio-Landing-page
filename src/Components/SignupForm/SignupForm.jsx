@@ -42,7 +42,7 @@ const SignupForm = () => {
         <div className='form-submit-container'>
           <div className='form-submit'>
             <h1>הודעה נשלחה בהצלחה!</h1>
-            <button onClick={() => setSubmitStatus(null)}>סגור</button>
+            <button onClick={() => setSubmitStatus(null)}>סגרי</button>
           </div>
         </div>
       )}
@@ -50,13 +50,13 @@ const SignupForm = () => {
         <div className='form-submit-container'>
           <div className='form-submit'>
             <h1>קרתה תקלה, נסו שוב מאוחר יותר.</h1>
-            <button onClick={() => setSubmitStatus(null)}>סגור</button>
+            <button onClick={() => setSubmitStatus(null)}>סגרי</button>
           </div>
         </div>
       )}
       <div className='form-box' id='signupform'>
         <div className='form-container'>
-          <h1>הגיע הזמן לדאוג לעצמך!</h1>
+          <h1>בואי נעשה את הצעד הראשון!</h1>
           <form onSubmit={handleSubmit} className='form-container-input'>
             <div className='form-field'>
               <input
@@ -85,7 +85,7 @@ const SignupForm = () => {
                 required
               />
             </div>
-            <button type='submit'>שלח</button>
+            <button type='submit'>שלחי</button>
           </form>
         </div>
       </div>
