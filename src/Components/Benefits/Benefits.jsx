@@ -16,7 +16,7 @@ function Benefits() {
     <>
       <div className='benefits'>
         <h1>
-          את הסטודיו מנחים <span>3 ערכיים עיקריים: </span>
+          את הסטודיו מנחים <span>3 ערכים עיקריים: </span>
         </h1>
         <ScrollTrigger onEnter={handleEnter}>
           <div

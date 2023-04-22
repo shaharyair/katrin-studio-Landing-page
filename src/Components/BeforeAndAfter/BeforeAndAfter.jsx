@@ -11,8 +11,6 @@ const BeforeAndAfter = () => {
     { url: "/src/assets/benefits2.jpg" },
     { url: "/src/assets/benefits3.jpg" },
     { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
   ];
 
   return (
