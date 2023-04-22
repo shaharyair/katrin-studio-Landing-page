@@ -1,39 +1,51 @@
-.button {
-  opacity: 0;
-  z-index: 999;
-  cursor: pointer;
+.button-circle {
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+  cursor: pointer;
   position: fixed;
-  top: calc(100% - 10px);
-  left: calc(0% + 10px);
+  top: calc(100% - 20px);
+  left: calc(0% + 20px);
   transform: translate(0, -100%);
-  font-size: 6.5rem;
-  padding: 1.2rem;
   background-color: var(--color-main);
-  color: black;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-  transition: all 0.4s ease;
-  clip-path: circle(50% at 50% 50%);
-  animation: whatappbutton-anim 1.2s ease-in forwards;
-  transition: transform 1s ease, background-color 1s ease;
+  color: var(--color-black1);
+  transition: all 0.5s ease;
+  animation: whatappbutton-anim 1s ease-in;
+  filter: drop-shadow(0 5px 10px black);
+  border-radius: 50%;
 }
 
-.button:hover {
-  transform: translate(0, -100%) scale(1.1);
+.button {
+  padding: 1.5rem;
+  font-size: 10rem;
+}
+
+.button-circle:hover {
   background-color: white;
+  transform: translate(0, -100%) scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
-  .button {
-    font-size: 7.5rem;
+  .button-circle {
+    width: 7rem;
+    height: 7rem;
   }
 }
 
 @keyframes whatappbutton-anim {
   0% {
     opacity: 0;
+  }
+
+  25% {
+    transform: translate(0, -100%) scaleX(1.2);
+  }
+
+  50% {
+    transform: translate(0, -100%) scaleX(1);
   }
 
   100% {

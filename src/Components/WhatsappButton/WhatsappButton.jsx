@@ -6,7 +6,9 @@ function WhatsappButton() {
   return (
     <>
       <a href='https://wa.me/972556620441'>
-        <FaWhatsapp className='button' />
+        <div className='button-circle'>
+          <FaWhatsapp className='button' />
+        </div>
       </a>
     </>
   );
