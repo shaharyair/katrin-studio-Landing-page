@@ -5,31 +5,15 @@
 .hero {
   height: 100%;
   width: 100%;
-  padding: 5rem 0 3rem 0;
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(255, 192, 203, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(255, 192, 203, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(255, 192, 203, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffc0cb",GradientType=1);
+  padding: 20rem 0;
+  background: url("/src/assets/gymexample.jpg") center;
+  background-size: cover;
 }
 
 .hero__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
   position: relative;
 }
 
@@ -46,7 +30,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 80rem;
+  max-height: 20rem;
   gap: 5rem;
   text-align: center;
   animation: fade-left 1.2s ease-in;

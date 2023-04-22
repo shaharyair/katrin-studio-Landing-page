@@ -8,7 +8,7 @@ function Hero() {
     <>
       <div className='hero' id='hero'>
         <div className='hero__container'>
-          <img src={pic} alt='' />
+          {/* <img src={pic} alt='' /> */}
           <div className='hero__text-container'>
             <div className='hero__text-head'>
               <h1>הסטודיו של קאתרין</h1>
