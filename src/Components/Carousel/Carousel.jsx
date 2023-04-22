@@ -1,16 +1,34 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css"; // Import custom styles
 
 const Carousel = () => {
+  const [slidesToShow, setSlidesToShow] = useState(2);
+
   const carouselSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   };
+
+  const handleResize = () => {
+    if (window.innerWidth < 1024) {
+      setSlidesToShow(1);
+    } else {
+      setSlidesToShow(2);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const images = [
     { url: "/src/assets/2.png" },
