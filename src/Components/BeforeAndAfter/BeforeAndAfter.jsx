@@ -3,14 +3,14 @@ import "./BeforeAndAfter.css";
 
 const BeforeAndAfter = () => {
   const images = [
-    { url: "/src/assets/benefits1.jpg" },
-    { url: "/src/assets/benefits2.jpg" },
-    { url: "/src/assets/benefits3.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits1.jpg" },
-    { url: "/src/assets/benefits2.jpg" },
-    { url: "/src/assets/benefits3.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/3.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Noa/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Noa/2.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/3.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/3.jpg" },
   ];
 
   return (
