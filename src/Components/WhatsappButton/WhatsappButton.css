@@ -13,7 +13,7 @@
   background-color: var(--color-main);
   color: var(--color-black1);
   transition: all 0.5s ease;
-  animation: whatappbutton-anim 1.5s ease 0s 1 normal forwards;
+  animation: whatappbutton-anim 1.5s ease;
   filter: drop-shadow(0 5px 10px black);
   border-radius: 50%;
 }
@@ -25,7 +25,7 @@
 
 .button-circle:hover {
   background-color: white;
-  transform: translate(0, -100%) scale(1.1);
+  transform: translate(0, -100%) scale(1.15);
 }
 
 @media only screen and (min-width: 768px) {
