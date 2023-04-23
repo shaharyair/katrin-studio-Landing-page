@@ -75,7 +75,6 @@
   color: white;
   text-shadow: 0 2.5px 10px black;
   animation: fade-to-left 1.2s ease-in;
-  z-index: 1;
 }
 
 @keyframes fade-to-left {

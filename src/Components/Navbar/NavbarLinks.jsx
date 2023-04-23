@@ -18,14 +18,14 @@ const NavbarLinks = (props) => {
       </li>
       <li>
         <ScrollLink
-          to='aboutkatrin'
+          to='studio'
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
           className={props.navbarLinks.link}
         >
-          קצת עליי
+          הסטודיו
         </ScrollLink>
       </li>
       <li>
@@ -54,14 +54,14 @@ const NavbarLinks = (props) => {
       </li>
       <li>
         <ScrollLink
-          to='studio'
+          to='aboutkatrin'
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
           className={props.navbarLinks.link}
         >
-          הסטודיו
+          קצת עליי
         </ScrollLink>
       </li>
       <li>

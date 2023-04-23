@@ -15,7 +15,7 @@ const SignupForm = () => {
     });
   };
 
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitStatus, setSubmitStatus] = useState("resolved");
 
   const api = axios.create({
     baseURL: "http://localhost:3000",

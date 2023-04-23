@@ -18,10 +18,10 @@ function App() {
       <Navbar />
       <Hero />
       <Benefits />
-      <AboutKatrin />
+      <Studio />
       <BeforeAndAfter />
       <Reviews />
-      <Studio />
+      <AboutKatrin />
       <FAQ />
       <SignupForm />
       <Footer />
