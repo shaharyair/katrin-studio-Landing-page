@@ -9,9 +9,11 @@ const Carousel = () => {
 
   const carouselSettings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7500,
   };
 
   const handleResize = () => {
@@ -23,6 +25,7 @@ const Carousel = () => {
   };
 
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {

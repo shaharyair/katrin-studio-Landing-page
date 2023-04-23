@@ -22,7 +22,7 @@ function Hero() {
               <p>אימונים</p>
               <p>תוצאות</p>
             </div>
-            <p>ככה פשוט...</p>
+            <p>אין סיבה שלא תצליחי...</p>
             <div className='hero__buttons-container'>
               <a href='https://wa.me/972556620441' className='hero__button'>
                 גם ב Whatsapp <FaWhatsapp className='hero__button-icon' />
