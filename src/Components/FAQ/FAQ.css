@@ -7,7 +7,7 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-color: var(--color-black1);
+  background-color: var(--color-black2);
   padding: 3rem 0;
 }
 

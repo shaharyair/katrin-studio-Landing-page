@@ -17,7 +17,7 @@ const Carousel = () => {
   };
 
   const handleResize = () => {
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth <= 1024) {
       setSlidesToShow(1);
     } else {
       setSlidesToShow(2);
