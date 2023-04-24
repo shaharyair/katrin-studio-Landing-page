@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import "./AboutKatrin.css";
 import ScrollTrigger from "react-scroll-trigger";
+import katrinAbout from "/src/assets/KatrinPhotos/katrinAbout.png";
 
 const AboutKatrin = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +35,7 @@ const AboutKatrin = () => {
           </div>
           <ScrollTrigger onEnter={handleEnter}>
             <img
-              src='/src/assets/girlexample.png'
+              src={katrinAbout}
               alt='/'
               className={`about-img ${isVisible ? "about-fade-right" : ""}`}
             />

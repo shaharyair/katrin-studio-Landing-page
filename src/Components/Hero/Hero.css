@@ -5,9 +5,9 @@
 .hero {
   height: 100%;
   width: 100%;
-  padding: 12rem 0 8rem 0;
+  padding: 15rem 0 10rem 0;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   direction: rtl;
   overflow: hidden;
 }
@@ -19,9 +19,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("/src/assets/gymexample.jpg") center no-repeat;
+  background: url("/src/assets/StudioPhotos/studio3.png") center no-repeat;
   background-size: cover;
-  filter: blur(2.5px);
+  /* filter: blur(1px); */
   z-index: -1;
 }
 
@@ -36,13 +36,14 @@
 
 .hero__img-wrap {
   position: absolute;
-  top: 68%;
-  left: 25%;
+  top: 75%;
+  left: 75%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 5px 5px black);
   order: 1;
   border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
   animation: fade-to-right-mobile 1.2s ease-in;
+  z-index: 0;
 }
 
 @keyframes fade-to-right-mobile {
@@ -58,10 +59,10 @@
 }
 
 .hero__img-wrap > img {
-  width: 100vw;
+  width: 85vw;
   height: auto;
   max-width: 45rem;
-  filter: drop-shadow(0 5px 5px black);
+  filter: drop-shadow(0 5px 5px black) brightness(95%);
 }
 
 .hero__text-container {
@@ -75,6 +76,7 @@
   color: white;
   text-shadow: 0 2.5px 10px black;
   animation: fade-to-left 1.2s ease-in;
+  z-index: 1;
 }
 
 @keyframes fade-to-left {

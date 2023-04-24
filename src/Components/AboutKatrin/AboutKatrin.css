@@ -1,6 +1,6 @@
 .about-box {
   position: relative; /* Add position relative to enable pseudo-element */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.55);
   direction: rtl;
   padding: 3rem 0 2rem 0;
   overflow: hidden;
@@ -13,10 +13,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("/src/assets/gymexample.jpg") no-repeat center;
+  background: url("/src/assets/StudioPhotos/studio1.png") no-repeat center;
   background-size: cover;
   background-color: black;
-  filter: blur(5px);
+  filter: blur(3px);
   z-index: -1;
 }
 
@@ -43,9 +43,10 @@
 
 .about-img {
   opacity: 0;
-  width: 40vw;
-  max-width: 28rem;
+  width: 55vw;
+  max-width: 30rem;
   transform: translateX(25%);
+  filter: drop-shadow(0 5px 10px black);
 }
 
 .about-img.about-fade-right {

@@ -34,9 +34,9 @@ const Carousel = () => {
   }, []);
 
   const images = [
-    { url: "/src/assets/2.png" },
-    { url: "/src/assets/3.png" },
-    { url: "/src/assets/4.png" },
+    { url: "/src/assets/Whatsapp/2.png" },
+    { url: "/src/assets/Whatsapp/3.png" },
+    { url: "/src/assets/Whatsapp/4.png" },
   ];
 
   return (

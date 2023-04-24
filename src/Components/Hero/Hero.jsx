@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import pic from "/src/assets/gymgirl.png";
+import katrinHero from "/src/assets/KatrinPhotos/katrinHero.png";
 
 function Hero() {
   return (
@@ -9,7 +9,7 @@ function Hero() {
       <div className='hero' id='hero'>
         <div className='hero__container'>
           <div className='hero__img-wrap'>
-            <img src={pic} alt='' />
+            <img src={katrinHero} alt='' />
           </div>
           <div className='hero__text-container'>
             <div className='hero__text-head'>
