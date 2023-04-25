@@ -49,12 +49,12 @@
 @keyframes fade-to-right-mobile {
   0% {
     opacity: 0;
-    left: 10%;
+    left: 90%;
   }
 
   100% {
     opacity: 1;
-    left: 25%;
+    left: 75%;
   }
 }
 
@@ -62,7 +62,7 @@
   width: 85vw;
   height: auto;
   max-width: 45rem;
-  filter: drop-shadow(0 5px 5px black) brightness(95%);
+  filter: drop-shadow(0 2px 2px black) brightness(95%);
 }
 
 .hero__text-container {
@@ -165,6 +165,11 @@
     );
     animation: fade-to-right 1.2s ease-in;
   }
+
+  .hero__img-wrap > img {
+    filter: drop-shadow(0 5px 5px black) brightness(95%);
+  }
+
   .hero__text-head > h1 {
     font-size: 5rem;
   }

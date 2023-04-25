@@ -1,6 +1,6 @@
 :root {
   --navbar-height: 6.5rem;
-  --box-height: calc(var(--navbar-height) - 2rem);
+  --navbarBox-height: calc(var(--navbar-height) - 2rem);
   --navbar-fontSize: 2rem;
 }
 
@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   width: 98%;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   max-width: 120rem;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .navbar__logo > img {
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   filter: invert(1);
 }
 
@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
   width: max-content;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   font-size: calc(var(--navbar-fontSize) + 1.5rem);
   gap: 1rem;
 }
@@ -64,7 +64,7 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   font-size: var(--navbar-fontSize);
   gap: 2px;
 }
