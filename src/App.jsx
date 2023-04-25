@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import Reviews from "./Components/Reviews/Reviews";
 import AboutKatrin from "./Components/AboutKatrin/AboutKatrin";
 import BeforeAndAfter from "./Components/BeforeAndAfter/BeforeAndAfter";
+import Recipes from "./Components/Recipes/Recipes";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Hero />
       <Benefits />
       <Studio />
+      <Recipes />
       <BeforeAndAfter />
       <Reviews />
       <AboutKatrin />
