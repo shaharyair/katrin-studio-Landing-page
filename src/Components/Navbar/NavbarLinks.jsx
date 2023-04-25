@@ -18,6 +18,18 @@ const NavbarLinks = (props) => {
       </li>
       <li>
         <ScrollLink
+          to='aboutkatrin'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className={props.navbarLinks.link}
+        >
+          קצת עלי
+        </ScrollLink>
+      </li>
+      <li>
+        <ScrollLink
           to='studio'
           spy={true}
           smooth={true}
@@ -50,18 +62,6 @@ const NavbarLinks = (props) => {
           className={props.navbarLinks.link}
         >
           מתאמנות מספרות
-        </ScrollLink>
-      </li>
-      <li>
-        <ScrollLink
-          to='aboutkatrin'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className={props.navbarLinks.link}
-        >
-          קצת עליי
         </ScrollLink>
       </li>
       <li>

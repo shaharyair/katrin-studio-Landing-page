@@ -42,7 +42,6 @@ const SignupForm = () => {
         <div className='form-submit-container'>
           <div className='form-submit'>
             <h1>הודעה נשלחה בהצלחה!</h1>
-            <p>אני אחזור אליך אחרי האימון 💪</p>
             <button onClick={() => setSubmitStatus(null)}>סגרי</button>
           </div>
         </div>
