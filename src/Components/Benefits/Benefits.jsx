@@ -15,9 +15,6 @@ function Benefits() {
   return (
     <>
       <div className='benefits'>
-        <h1>
-          את הסטודיו מנחים <span>3 ערכים עיקריים: </span>
-        </h1>
         <ScrollTrigger onEnter={handleEnter}>
           <div
             className={`benefits-container ${
@@ -29,9 +26,9 @@ function Benefits() {
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>משפחתיות</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  בסטודיו שלנו אחת למען השנייה, מאוד חשוב לנו לתמוך ולעודד,
+                  המטרה שלנו כקהילה בסטודיו היא לדחוף אותך למקסימום שלך ולהגשים
+                  את המטרות שלנו.
                 </p>
               </div>
             </div>
@@ -40,9 +37,8 @@ function Benefits() {
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>מקצועיות</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  מאמנת אישית וקבוצתית, בוגרת המכללה האקדמית וינגייט. מתמחה
+                  באימוני כוח, פונקציונאלי, TRX, פילאטיס ,עיצוב וחיטוב הגוף.
                 </p>
               </div>
             </div>
@@ -51,9 +47,9 @@ function Benefits() {
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>ליווי אישי וצמוד</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  בין אם תעדיפי אימון אישי או קבוצתי.
+                  <br /> אני אעבוד איתך כדיי ליצור תוכנית אימונים שתתאים למבנה
+                  הגוף, צרכים ומטרות האישיות שלך.
                 </p>
               </div>
             </div>
