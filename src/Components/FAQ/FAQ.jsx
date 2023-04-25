@@ -47,7 +47,9 @@ const FAQ = () => {
           {questions.map((item, i) => (
             <div className='faq-item' key={i}>
               <div className='title' onClick={() => toggle(i)}>
-                <h1>{item.question}</h1>
+                <h1 style={activeQuestions[i] ? { color: "pink" } : {}}>
+                  {item.question}
+                </h1>
                 <FaAngleDown
                   className={activeQuestions[i] ? "faq-icon flip" : "faq-icon"}
                 />

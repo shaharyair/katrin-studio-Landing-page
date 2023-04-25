@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import "./Benefits.css";
-import Pic1 from "/src/assets/benefits1.jpg";
-import Pic3 from "/src/assets/benefits2.jpg";
-import katrinSquat from "/src/assets/KatrinPhotos/katrinSquat.png";
+import Pic1 from "/src/assets/Benefits/benefits1.jpg";
+import Pic3 from "/src/assets/Benefits/benefits2.jpg";
+import katrinSquat from "/src/assets/Benefits/katrinSquat.png";
 import ScrollTrigger from "react-scroll-trigger";
 
 function Benefits() {
@@ -26,9 +26,9 @@ function Benefits() {
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>משפחתיות</h1>
                 <p className='benefits-content'>
-                  בסטודיו שלנו אחת למען השנייה, מאוד חשוב לנו לתמוך ולעודד,
-                  המטרה שלנו כקהילה בסטודיו היא לדחוף אותך למקסימום שלך ולהגשים
-                  את המטרות שלנו.
+                  בסטודיו שלנו אנחנו אחת למען השנייה, מאוד חשוב לנו לתמוך
+                  ולעודד, המטרה שלנו כקהילה בסטודיו היא לדחוף אותך למקסימום שלך
+                  ולהגשים את המטרות שלנו.
                 </p>
               </div>
             </div>

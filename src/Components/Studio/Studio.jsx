@@ -22,17 +22,14 @@ function Studio() {
             <div className='studio__text-container'>
               <h1>הסטודיו</h1>
               <p>
-                פילאטיס היא צורת פעילות גופנית שפותחה בתחילת המאה ה-20 על ידי
-                ג'וזף פילאטיס. המטרה של צורת פעילות גופנית זו היא להתמקד בליבת
-                הגוף, הכוללת את השרירים העמוקים המייצבים ותומכים בעמוד השדרה.
-                קרן פילאטיס
+                צריך לכתוב Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Eligendi nulla consectetur necessitatibus nobis deleniti
+                eum, modi maxime nemo cum. Labore?
               </p>
               <p>
-                ויוגה הינו סטודיו בוטיק פופולרי בעיר עפולה שאליו נשים יכולות
-                ללכת ללמוד עוד על צורת פעילות גופנית זו בקבוצות קטנות. בסטודיו
-                מערך מגוון של שיעורים לכל הרמות, מה שמקל על המתאמנות לתזמן את
-                זמנם לפי לוח הזמנים של קרן פילאטיס. השיעורים בסטודיו שלנו
-                מתאימים לנשים שרוצות
+                צריך לכתוב Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Eius doloremque dolorum ratione id impedit atque officia
+                cumque ducimus beatae tempora?
               </p>
             </div>
             <img src={studioPng} alt='' />

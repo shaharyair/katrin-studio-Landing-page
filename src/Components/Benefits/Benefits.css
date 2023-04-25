@@ -77,7 +77,6 @@
 
 .benefits-content {
   font-size: calc(var(--benefits-fontSize) - 1rem);
-  max-width: 95%;
 }
 
 @media only screen and (min-width: 768px) {
