@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import "./AboutKatrin.css";
 import ScrollTrigger from "react-scroll-trigger";
-import katrinAbout from "/src/assets/KatrinPhotos/katrinAbout.png";
 
 const AboutKatrin = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,26 +15,25 @@ const AboutKatrin = () => {
         <div className='about-container'>
           <div className='about-text-container'>
             <div className='about-head'>
-              <h1>קצת עליי..</h1>
+              <h1>מי אני?</h1>
               <h2>קאתרין יאיר</h2>
             </div>
             <div className='about-text'>
               <p>
-                לאורך הרבה שנים עבדתי בעבודה אחרת, אבל רק כשהגעתי לאימון הרגשתי
-                מחוברת וקשובה לעצמי, הרגשתי שאני נותנת לעצמי מקום, מתפתחת
-                וצומחת. הרגשתי שאני מתמלאת בעוצמה ויכולה לעשות הכל. מתחתי את
-                הגבולות שלי.
+                מאמנת כושר ומלווה לאורח חיים בריא. בין כל הטירוף של סדר היום
+                העמוס של ימינו, קיימת נטייה לשים את כל העולם לפניכם ואת עצמכם
+                במקום האחרון.
               </p>
               <p>
-                עם הזמן הבנתי שזו התשוקה שלי, לתת בית לכל אותן נשים שמחפשות את
-                העוצמה הזאת לכן החלטתי להיות מאמנת כושר וליצור לי ולמתאמנות שלי
-                את הבית הזה.
+                מאמנת כושר ומלווה לאורח חיים בריא. בין כל הטירוף של סדר היום
+                העמוס של ימינו, קיימת נטייה לשים את כל העולם לפניכם ואת עצמכם
+                במקום האחרון.
               </p>
             </div>
           </div>
           <ScrollTrigger onEnter={handleEnter}>
             <img
-              src={katrinAbout}
+              src='/src/assets/girlexample.png'
               alt='/'
               className={`about-img ${isVisible ? "about-fade-right" : ""}`}
             />

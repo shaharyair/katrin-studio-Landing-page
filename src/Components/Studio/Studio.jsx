@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import "./Studio.css";
 import ScrollTrigger from "react-scroll-trigger";
-import studioPng from "/src/assets/StudioPhotos/studio3.png";
 
 function Studio() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +34,7 @@ function Studio() {
                 מתאימים לנשים שרוצות
               </p>
             </div>
-            <img src={studioPng} alt='' />
+            <img src='/src/assets/gymexample.jpg' alt='' />
           </div>
         </ScrollTrigger>
       </div>
