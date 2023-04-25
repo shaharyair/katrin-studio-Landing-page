@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import "./Benefits.css";
 import Pic1 from "/src/assets/benefits1.jpg";
-import Pic2 from "/src/assets/benefits2.jpg";
-import Pic3 from "/src/assets/benefits4.jpg";
+import Pic3 from "/src/assets/benefits2.jpg";
+import katrinSquat from "/src/assets/KatrinPhotos/katrinSquat.png";
 import ScrollTrigger from "react-scroll-trigger";
 
 function Benefits() {
@@ -15,9 +15,6 @@ function Benefits() {
   return (
     <>
       <div className='benefits'>
-        <h1>
-          <span>בסטודיו של קאתרין</span> - אנחנו עובדים בשיטה שמובילה להצלחה
-        </h1>
         <ScrollTrigger onEnter={handleEnter}>
           <div
             className={`benefits-container ${
@@ -27,33 +24,32 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic1} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>משפחתיות</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  בסטודיו שלנו אחת למען השנייה, מאוד חשוב לנו לתמוך ולעודד,
+                  המטרה שלנו כקהילה בסטודיו היא לדחוף אותך למקסימום שלך ולהגשים
+                  את המטרות שלנו.
                 </p>
               </div>
             </div>
             <div className='benefit'>
-              <img src={Pic2} alt='/' />
+              <img src={katrinSquat} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>מקצועיות</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  מאמנת אישית וקבוצתית, בוגרת המכללה האקדמית וינגייט. מתמחה
+                  באימוני כוח, פונקציונאלי, TRX, פילאטיס ,עיצוב וחיטוב הגוף.
                 </p>
               </div>
             </div>
             <div className='benefit'>
               <img src={Pic3} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
+                <h1 className='benefits-title'>ליווי אישי וצמוד</h1>
                 <p className='benefits-content'>
-                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
-                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
-                  והירכיים
+                  בין אם תעדיפי אימון אישי או קבוצתי.
+                  <br /> אני אעבוד איתך כדיי ליצור תוכנית אימונים שתתאים למבנה
+                  הגוף, צרכים ומטרות האישיות שלך.
                 </p>
               </div>
             </div>

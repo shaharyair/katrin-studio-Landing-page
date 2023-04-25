@@ -18,11 +18,11 @@ function App() {
       <Navbar />
       <Hero />
       <Benefits />
-      <AboutKatrin />
-      <BeforeAndAfter />
       <Studio />
-      <FAQ />
+      <BeforeAndAfter />
       <Reviews />
+      <AboutKatrin />
+      <FAQ />
       <SignupForm />
       <Footer />
       <WhatsappButton />
