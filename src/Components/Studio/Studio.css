@@ -7,7 +7,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.55);
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .studio::before {
@@ -73,6 +73,7 @@
 .studio__text-container > p {
   font-size: calc(var(--studio-fontSize) + 0.1rem);
   line-height: calc(var(--studio-fontSize) + 1rem);
+  font-weight: 500;
 }
 
 .studio__container.studio-fade-bottom {
@@ -83,7 +84,7 @@
 
 @media only screen and (min-width: 768px) {
   .studio {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
   .studio__container {
     flex-direction: row-reverse;
