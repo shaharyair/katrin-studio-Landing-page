@@ -100,9 +100,9 @@
   align-items: center;
   flex-direction: column;
   width: 85%;
-  height: 25%;
+  height: 35%;
   max-width: 45rem;
-  max-height: 22rem;
+  max-height: 25rem;
   gap: 2rem;
   background-color: black;
   border: 0.05rem solid white;

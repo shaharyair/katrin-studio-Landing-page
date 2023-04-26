@@ -2,8 +2,8 @@
   position: relative; /* Add position relative to enable pseudo-element */
   background-color: rgba(0, 0, 0, 0.55);
   direction: rtl;
-  padding: 3rem 0 2rem 0;
   overflow: hidden;
+  padding: 2rem 0;
 }
 
 .about-box::before {
@@ -76,6 +76,7 @@
     flex-direction: row-reverse;
     gap: 5rem;
     max-width: 100rem;
+    padding: initial;
   }
 
   .about-text-container {
@@ -84,11 +85,11 @@
   }
 
   .about-img {
-    transform: translate(25%, 10%);
+    transform: translate(25%, 5%);
   }
 
   .about-img.about-fade-right {
-    transform: translate(0%, 10%);
+    transform: translate(0%, 5%);
   }
 }
 
