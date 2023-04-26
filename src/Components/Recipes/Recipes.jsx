@@ -6,7 +6,7 @@ const Recipes = () => {
     <>
       <div className='recipes'>
         <div className='recipes-container'>
-          <h1>הצטרפי לקהילת המתכונים שלנו!</h1>
+          <h1>הצטרפי לקבוצת המתכונים שלנו!</h1>
           <button>
             <a href='https://chat.whatsapp.com/LNe0EqWlJStCAtybKVw3Rm'>
               הצטרפי עכשיו
