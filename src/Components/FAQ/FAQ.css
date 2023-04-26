@@ -50,6 +50,11 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  transition: color 0.2s ease;
+}
+
+.title:hover {
+  color: #9c9c9c;
 }
 
 .title > h1,
@@ -81,13 +86,11 @@
   overflow: hidden;
   max-height: 0;
   max-width: 95%;
-  transition: max-height 0.2s ease-in;
   font-weight: 500;
 }
 
 .answer.show {
   max-height: 500px;
-  transition: max-height 0.2s ease-out;
 }
 
 @media only screen and (min-width: 768px) {

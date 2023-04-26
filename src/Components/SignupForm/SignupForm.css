@@ -124,6 +124,7 @@
 
 .form-submit > p {
   font-size: calc(var(--signup-fontSize) + 0.8rem);
+  font-weight: 500;
 }
 
 @keyframes fadeIn {
