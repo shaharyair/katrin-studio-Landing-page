@@ -103,6 +103,7 @@
   height: 35%;
   max-width: 45rem;
   max-height: 25rem;
+  min-height: 20rem;
   gap: 2rem;
   background-color: black;
   border: 0.05rem solid white;
