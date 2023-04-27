@@ -81,7 +81,7 @@
 
   .about-text-container {
     text-align: right;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .about-img {

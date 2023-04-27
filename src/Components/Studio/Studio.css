@@ -93,7 +93,7 @@
 
   .studio__text-container {
     text-align: right;
-    align-items: start;
+    align-items: flex-start;
   }
 
   studio__container > img:hover {
