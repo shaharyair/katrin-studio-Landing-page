@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import "./Studio.css";
 import ScrollTrigger from "react-scroll-trigger";
+import studioPng from "/src/assets/StudioPhotos/studio3.png";
 
 function Studio() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +33,7 @@ function Studio() {
                 יותר.
               </p>
             </div>
-            <img src='/src/assets/gymexample.jpg' alt='' />
+            <img src={studioPng} alt='' />
           </div>
         </ScrollTrigger>
       </div>

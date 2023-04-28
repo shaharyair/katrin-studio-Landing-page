@@ -9,7 +9,6 @@
 .reviews-container {
   margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 85%;
@@ -19,6 +18,7 @@
 
 .reviews-container-text {
   text-align: center;
+  margin: auto;
 }
 
 .reviews-container-text > h1 {
@@ -29,16 +29,12 @@
 
 .reviews-container-text > h2 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .reviews-box {
-    padding: 4rem 0;
-  }
   .reviews-container {
     flex-direction: row;
-    gap: 20rem;
   }
 
   .reviews-container-text {
@@ -50,6 +46,6 @@
   }
 
   .reviews-container-text > h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
