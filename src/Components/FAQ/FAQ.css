@@ -88,11 +88,10 @@
   max-height: 0px;
   max-width: 95%;
   font-weight: 500;
-  transition: max-height 0.2s ease;
 }
 
 .answer.show {
-  max-height: 1000px;
+  max-height: 9999px;
 }
 
 @media only screen and (min-width: 768px) {

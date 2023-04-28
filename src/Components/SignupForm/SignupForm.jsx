@@ -18,7 +18,7 @@ const SignupForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: import.meta.REACT_APP_API_URL,
   });
 
   const handleSubmit = async (event) => {
