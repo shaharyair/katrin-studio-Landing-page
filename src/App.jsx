@@ -22,9 +22,9 @@ function App() {
       <Studio />
       <Recipes />
       <BeforeAndAfter />
-      <Reviews />
-      <AboutKatrin />
+      <Studio />
       <FAQ />
+      <Reviews />
       <SignupForm />
       <Footer />
       <WhatsappButton />
