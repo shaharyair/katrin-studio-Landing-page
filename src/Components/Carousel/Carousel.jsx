@@ -13,7 +13,7 @@ const Carousel = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 7500,
+    autoplaySpeed: 6000,
   };
 
   const handleResize = () => {
@@ -34,9 +34,10 @@ const Carousel = () => {
   }, []);
 
   const images = [
-    { url: "/src/assets/Whatsapp/2.png" },
-    { url: "/src/assets/Whatsapp/3.png" },
-    { url: "/src/assets/Whatsapp/4.png" },
+    { url: "/src/assets/Whatsapp Reviews/1.png" },
+    { url: "/src/assets/Whatsapp Reviews/2.png" },
+    { url: "/src/assets/Whatsapp Reviews/3.png" },
+    { url: "/src/assets/Whatsapp Reviews/4.png" },
   ];
 
   return (
