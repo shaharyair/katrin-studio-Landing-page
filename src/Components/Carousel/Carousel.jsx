@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css"; // Import custom styles
+import reviews1 from "/src/assets/Whatsapp Reviews/1.png";
+import reviews2 from "/src/assets/Whatsapp Reviews/2.png";
+import reviews3 from "/src/assets/Whatsapp Reviews/3.png";
+import reviews4 from "/src/assets/Whatsapp Reviews/4.png";
 
 const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
@@ -34,10 +38,10 @@ const Carousel = () => {
   }, []);
 
   const images = [
-    { url: "/src/assets/Whatsapp Reviews/1.png" },
-    { url: "/src/assets/Whatsapp Reviews/2.png" },
-    { url: "/src/assets/Whatsapp Reviews/3.png" },
-    { url: "/src/assets/Whatsapp Reviews/4.png" },
+    { url: reviews1 },
+    { url: reviews2 },
+    { url: reviews3 },
+    { url: reviews4 },
   ];
 
   return (
