@@ -1,5 +1,5 @@
 :root {
-  --faq-fontsize: 1.5rem;
+  --faq-fontsize: 1.4rem;
 }
 
 .faq-box {
@@ -7,8 +7,8 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-color: var(--color-black1);
-  padding: 3rem 0;
+  padding: 3rem 0 2rem 0;
+  background-color: var(--color-black2);
 }
 
 .faq {
@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* transition: all 1s ease; */
+  max-width: 100rem;
 }
 
 .faq > h1 {
@@ -27,6 +27,7 @@
   font-size: calc(var(--faq-fontsize) + 2.5rem);
   margin-bottom: 1rem;
   letter-spacing: 0.08rem;
+  direction: rtl;
 }
 
 .faq-item {
@@ -42,14 +43,19 @@
   color: white;
 }
 
-.faq-item:nth-child(-n + 5) {
+.faq-item:nth-child(-n + 6) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .title {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
+  transition: color 0.2s ease;
+}
+
+.title:hover {
+  color: #9c9c9c;
 }
 
 .title > h1,
@@ -58,38 +64,38 @@
 }
 
 .title > h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: calc(var(--faq-fontsize) + 0.5rem);
+  max-width: 85%;
+  transition: color 0.2s ease;
 }
 
 .faq-icon {
-  transition: transform 0.5s ease;
-  margin-right: 2rem;
-  margin-top: 0.5rem;
+  transition: transform 0.2s ease;
+  align-self: center;
 }
 
 .faq-icon.flip {
   transform: rotate(-180deg);
 }
 
+.answer > p {
+  line-height: 3rem;
+}
+
 .answer {
   overflow: hidden;
   max-height: 0;
   max-width: 95%;
-  transition: max-height 0.3s ease-in;
+  font-weight: 500;
 }
 
 .answer.show {
-  max-height: 5rem;
-  transition: max-height 0.5s ease-out;
+  max-height: 500px;
 }
 
 @media only screen and (min-width: 768px) {
   :root {
     --faq-fontsize: 1.8rem;
-  }
-
-  .faq {
-    max-width: 100rem;
   }
 }

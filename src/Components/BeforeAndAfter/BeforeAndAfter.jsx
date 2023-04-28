@@ -3,26 +3,21 @@ import "./BeforeAndAfter.css";
 
 const BeforeAndAfter = () => {
   const images = [
-    { url: "/src/assets/benefits1.jpg" },
-    { url: "/src/assets/benefits2.jpg" },
-    { url: "/src/assets/benefits3.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits1.jpg" },
-    { url: "/src/assets/benefits2.jpg" },
-    { url: "/src/assets/benefits3.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
-    { url: "/src/assets/benefits4.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Daniel/2.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Noa/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Noa/2.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Limor/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Limor/2.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Revital/1.jpg" },
+    { url: "/src/assets/BeforeAndAfter/Revital/2.jpg" },
   ];
 
   return (
     <div className='gallery-box' id='beforeandafter'>
       <div className='gallery-head'>
         <h1>לפני ואחרי</h1>
-        <p>
-          הכל מתחיל בהחלטה אחת – רצון אמיתי לעשות שינוי, ועם תוצאות? אי אפשר
-          להתווכח
-        </p>
+        <p>מההתחלה עד הסוף - סיפורי הצלחה של מתאמנות</p>
       </div>
       <div className='gallery-container'>
         {images.map((img, i) => (

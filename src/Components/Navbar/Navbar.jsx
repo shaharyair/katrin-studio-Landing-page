@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import NavbarLinks from "./NavbarLinks";
+import logoNoCircle from "/src/assets/Logo/logo-no-circle.png";
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import {
@@ -69,7 +70,7 @@ function Navbar() {
             className='navbar__logo'
             onClick={closeMobileMenu}
           >
-            <img src='/src/assets/logo-no-circle.png' alt='img' />
+            <img src={logoNoCircle} alt='img' />
           </ScrollLink>
           <div className='navbar__social-icons'>
             <a

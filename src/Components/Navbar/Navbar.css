@@ -1,6 +1,6 @@
 :root {
   --navbar-height: 6.5rem;
-  --box-height: calc(var(--navbar-height) - 2rem);
+  --navbarBox-height: calc(var(--navbar-height) - 2rem);
   --navbar-fontSize: 2rem;
 }
 
@@ -15,8 +15,8 @@
   font-size: var(--navbar-fontSize);
   font-weight: 400;
   box-shadow: 0 2px 15px rgba(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .navbar__box {
@@ -24,9 +24,8 @@
   justify-content: space-between;
   align-items: center;
   width: 98%;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   max-width: 120rem;
-  /* transition: all 1s ease; */
 }
 
 .navbar__logo {
@@ -36,7 +35,7 @@
 }
 
 .navbar__logo > img {
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   filter: invert(1);
 }
 
@@ -46,7 +45,7 @@
   justify-content: center;
   align-items: center;
   width: max-content;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   font-size: calc(var(--navbar-fontSize) + 1.5rem);
   gap: 1rem;
 }
@@ -56,7 +55,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: var(--color-main);
 }
 
 .navbar__menu {
@@ -65,7 +64,7 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  height: var(--box-height);
+  height: var(--navbarBox-height);
   font-size: var(--navbar-fontSize);
   gap: 2px;
 }
@@ -106,20 +105,18 @@
 
 .navbar__link:hover,
 .navbar__social-link:hover {
-  /* filter: drop-shadow(0 2px 5px black); */
+  transition: all 0.3s ease-in;
 }
 
 .navbar__link:hover {
   color: pink;
-  transition: all 0.2s ease-in-out;
 }
 
 .navbar__social-link:hover {
-  color: pink;
-  transition: all 0.2s ease-in-out;
+  color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
   .navbar__box {
     width: 95%;
   }
@@ -138,7 +135,7 @@
     z-index: 999;
     transition: all 0.5s ease-in;
     gap: initial;
-    opacity: 0.5;
+    opacity: 0.75;
   }
 
   .navbar-mobile {
@@ -172,7 +169,7 @@
   .navbar__link:hover {
     background-color: white;
     color: black;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in;
   }
 
   .navbar__social-icons {
