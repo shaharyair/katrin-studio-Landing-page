@@ -13,7 +13,7 @@
   background-color: var(--color-main);
   color: var(--color-black1);
   transition: all 0.5s ease;
-  animation: whatappbutton-anim 1.5s ease;
+  animation: whatappbutton-anim 1s ease-in;
   filter: drop-shadow(0 5px 10px black);
   border-radius: 50%;
 }
@@ -25,7 +25,7 @@
 
 .button-circle:hover {
   background-color: white;
-  transform: translate(0, -100%) scale(1.15);
+  transform: translate(0, -100%) scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -37,44 +37,18 @@
 
 @keyframes whatappbutton-anim {
   0% {
-    animation-timing-function: ease-in;
     opacity: 0;
-    transform: translateY(-250px) translate(0, -100%);
   }
 
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0) translate(0, -100%);
+  25% {
+    transform: translate(0, -100%) scaleX(1.2);
   }
 
-  55% {
-    animation-timing-function: ease-in;
-    transform: translateY(-65px) translate(0, -100%);
-  }
-
-  72% {
-    animation-timing-function: ease-out;
-    transform: translateY(0) translate(0, -100%);
-  }
-
-  81% {
-    animation-timing-function: ease-in;
-    transform: translateY(-28px) translate(0, -100%);
-  }
-
-  90% {
-    animation-timing-function: ease-out;
-    transform: translateY(0) translate(0, -100%);
-  }
-
-  95% {
-    animation-timing-function: ease-in;
-    transform: translateY(-8px) translate(0, -100%);
+  50% {
+    transform: translate(0, -100%) scaleX(1);
   }
 
   100% {
-    animation-timing-function: ease-out;
-    transform: translateY(0) translate(0, -100%);
+    opacity: 1;
   }
 }

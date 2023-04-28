@@ -15,6 +15,9 @@ function Benefits() {
   return (
     <>
       <div className='benefits'>
+        <h1>
+          <span>בסטודיו של קאתרין</span> - אנחנו עובדים בשיטה שמובילה להצלחה
+        </h1>
         <ScrollTrigger onEnter={handleEnter}>
           <div
             className={`benefits-container ${
@@ -24,7 +27,7 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic1} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>משפחתיות</h1>
+                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
                 <p className='benefits-content'>
                   בסטודיו שלנו אנחנו אחת למען השנייה, מאוד חשוב לנו לתמוך
                   ולעודד, המטרה שלנו כקהילה בסטודיו היא לדחוף אותך למקסימום שלך
@@ -33,9 +36,9 @@ function Benefits() {
               </div>
             </div>
             <div className='benefit'>
-              <img src={katrinSquat} alt='/' />
+              <img src={Pic2} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>מקצועיות</h1>
+                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
                 <p className='benefits-content'>
                   מאמנת כושר אישית וקבוצתית, בוגרת המכללה האקדמית וינגייט. מתמחה
                   באימוני כוח, פונקציונאלי, TRX, פילאטיס מזרון ומכשירים ,עיצוב
@@ -46,11 +49,11 @@ function Benefits() {
             <div className='benefit'>
               <img src={Pic3} alt='/' />
               <div className='benefits__text-container'>
-                <h1 className='benefits-title'>ליווי אישי וצמוד</h1>
+                <h1 className='benefits-title'>ליווי אישי להצלחה</h1>
                 <p className='benefits-content'>
-                  בין אם תעדיפי אימון אישי או קבוצתי.
-                  <br /> אני אעבוד איתך כדיי ליצור תוכנית אימונים שתתאים למבנה
-                  הגוף, צרכים ומטרות האישיות שלך.
+                  המתכון לחיטוב פלג הגוף התחתון, שמשלב בתוכו תזונה, תרגילים
+                  ייעודיים, טכניקה ומספר חזרות, נמצא בקורס הדיגיטלי לעיצוב הישבן
+                  והירכיים
                 </p>
               </div>
             </div>

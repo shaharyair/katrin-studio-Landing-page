@@ -37,13 +37,10 @@ const questions = [
 ];
 
 const FAQ = () => {
-  const [activeQuestions, setActiveQuestions] = useState({});
+  const [activeQuestion, setActiveQuestion] = useState(null);
 
   const toggle = (i) => {
-    setActiveQuestions({
-      ...activeQuestions,
-      [i]: !activeQuestions[i],
-    });
+    setActiveQuestion(i === activeQuestion ? null : i);
   };
 
   return (
@@ -58,10 +55,12 @@ const FAQ = () => {
                   {item.question}
                 </h1>
                 <FaAngleDown
-                  className={activeQuestions[i] ? "faq-icon flip" : "faq-icon"}
+                  className={
+                    activeQuestion === i ? "faq-icon flip" : "faq-icon"
+                  }
                 />
               </div>
-              <div className={activeQuestions[i] ? "answer show" : "answer"}>
+              <div className={activeQuestion === i ? "answer show" : "answer"}>
                 <p>{item.answer}</p>
               </div>
             </div>
