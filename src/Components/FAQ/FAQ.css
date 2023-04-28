@@ -85,14 +85,14 @@
 
 .answer {
   overflow: hidden;
-  max-height: 0;
+  max-height: 0px;
   max-width: 95%;
   font-weight: 500;
   transition: max-height 0.2s ease;
 }
 
 .answer.show {
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 @media only screen and (min-width: 768px) {

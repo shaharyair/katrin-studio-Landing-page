@@ -62,7 +62,7 @@
   width: 85vw;
   height: auto;
   max-width: 45rem;
-  filter: drop-shadow(0 2px 2px black) brightness(95%);
+  filter: drop-shadow(0 2px 2px black);
 }
 
 .hero__text-container {

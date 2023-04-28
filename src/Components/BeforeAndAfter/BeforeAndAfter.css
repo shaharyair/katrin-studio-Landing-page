@@ -44,14 +44,6 @@
   filter: drop-shadow(0 5px 10px black);
 }
 
-.gallery-container > img:nth-child(3) {
-  object-position: center;
-}
-
-.gallery-container > img:nth-child(4) {
-  object-position: bottom;
-}
-
 @media screen and (min-width: 768px) {
   .gallery-container > img {
     max-width: 30rem;
