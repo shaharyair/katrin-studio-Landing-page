@@ -9,7 +9,7 @@ const NavbarLinks = (props) => {
           to='hero'
           spy={true}
           smooth={true}
-          offset={-70}
+          // offset={-70}
           duration={1000}
           className={`${props.navbarLinks.link} ${props.navbarLinks.main}`}
         >
@@ -21,7 +21,7 @@ const NavbarLinks = (props) => {
           to='studio'
           spy={true}
           smooth={true}
-          offset={-70}
+          // offset={-70}
           duration={1000}
           className={props.navbarLinks.link}
         >
