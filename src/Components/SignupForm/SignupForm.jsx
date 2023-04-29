@@ -18,7 +18,7 @@ const SignupForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
-    baseURL: import.meta.env.VITE_REACT_API_URL,
+    baseURL: "https://katrin-fitness.vercel.app/",
   });
 
   const handleSubmit = async (event) => {
