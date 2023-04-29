@@ -17,9 +17,7 @@ const SignupForm = () => {
 
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const api = axios.create({
-    baseURL: "https://katrin-fitness.vercel.app/",
-  });
+  const api = axios.create();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
