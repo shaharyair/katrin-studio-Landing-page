@@ -22,9 +22,10 @@
 }
 
 .form-container > h1 {
-  color: var(--color-black1);
-  font-size: calc(var(--signup-fontSize) + 1.5rem);
-  font-weight: 800;
+  text-shadow: 0 2px 5px black;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
   text-align: center;
 }
 

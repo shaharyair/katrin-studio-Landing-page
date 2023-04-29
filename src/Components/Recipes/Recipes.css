@@ -17,9 +17,10 @@
 }
 
 .recipes-container > h1 {
-  color: var(--color-black1);
+  text-shadow: 0 2px 5px black;
+  color: white;
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .recipes-container > button {
   padding: 1rem 2rem;
