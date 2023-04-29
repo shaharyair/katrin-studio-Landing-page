@@ -15,7 +15,7 @@ const SignupForm = () => {
     });
   };
 
-  const [submitStatus, setSubmitStatus] = useState("resolved");
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
     baseURL: import.meta.REACT_APP_API_URL,
