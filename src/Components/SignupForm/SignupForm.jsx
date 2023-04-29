@@ -61,6 +61,19 @@ const SignupForm = () => {
           <form onSubmit={handleSubmit} className='form-container-input'>
             <div className='form-field'>
               <input
+                type='text'
+                id='fullName'
+                name='fullName'
+                placeholder='שם מלא'
+                pattern='^[a-zA-Z א-ת]+$'
+                title='שם מלא צריך לכלול רק אותיות בעברית או באנגלית.'
+                value={formData.fullName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className='form-field'>
+              <input
                 type='tel'
                 id='phoneNumber'
                 name='phoneNumber'
@@ -69,19 +82,6 @@ const SignupForm = () => {
                 input='numeric'
                 title='מספר הטלפון צריך לכלול רק מספרים ומינימום של 10 ספרות.'
                 value={formData.phoneNumber}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className='form-field'>
-              <input
-                type='text'
-                id='fullName'
-                name='fullName'
-                placeholder='שם מלא'
-                pattern='^[a-zA-Z א-ת]+$'
-                title='שם מלא צריך לכלול רק אותיות בעברית או באנגלית.'
-                value={formData.fullName}
                 onChange={handleChange}
                 required
               />

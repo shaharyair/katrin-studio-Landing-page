@@ -7,7 +7,6 @@
   width: 100%;
   padding: 15rem 0 10rem 0;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.25);
   direction: rtl;
   overflow: hidden;
 }
@@ -21,7 +20,7 @@
   height: 100%;
   background: url("/src/assets/StudioPhotos/studio3.png") center no-repeat;
   background-size: cover;
-  /* filter: blur(1px); */
+  filter: brightness(80%);
   z-index: -1;
 }
 
@@ -42,19 +41,17 @@
   filter: drop-shadow(0 5px 5px black);
   order: 1;
   border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
-  animation: fade-to-right-mobile 1.2s ease-in;
+  animation: fade-img-mobile 1.2s ease-in;
   z-index: 0;
 }
 
-@keyframes fade-to-right-mobile {
+@keyframes fade-img-mobile {
   0% {
     opacity: 0;
-    left: 90%;
   }
 
   100% {
     opacity: 1;
-    left: 75%;
   }
 }
 
@@ -82,7 +79,7 @@
 @keyframes fade-to-left {
   0% {
     opacity: 0;
-    transform: translateX(15%);
+    transform: translateX(10%);
   }
 
   100% {
@@ -182,10 +179,6 @@
     font-size: 3.5rem;
   }
 
-  /* .hero__text-container > p {
-    font-size: 3rem;
-  } */
-
   .hero__button {
     font-size: 2.2rem;
   }
@@ -198,7 +191,7 @@
 @keyframes fade-to-right {
   0% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
 
   100% {

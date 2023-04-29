@@ -7,6 +7,7 @@ import reviews1 from "/src/assets/Whatsapp Reviews/1.png";
 import reviews2 from "/src/assets/Whatsapp Reviews/2.png";
 import reviews3 from "/src/assets/Whatsapp Reviews/3.png";
 import reviews4 from "/src/assets/Whatsapp Reviews/4.png";
+import reviews5 from "/src/assets/Whatsapp Reviews/5.png";
 
 const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
@@ -17,7 +18,7 @@ const Carousel = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 10000,
   };
 
   const handleResize = () => {
@@ -42,6 +43,7 @@ const Carousel = () => {
     { url: reviews2 },
     { url: reviews3 },
     { url: reviews4 },
+    { url: reviews5 },
   ];
 
   return (

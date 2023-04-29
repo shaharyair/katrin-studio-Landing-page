@@ -10,7 +10,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={`${props.navbarLinks.link} ${props.navbarLinks.main}`}
         >
           ראשי
@@ -22,7 +22,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           הסטודיו
@@ -34,7 +34,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           לפני ואחרי
@@ -46,7 +46,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           מתאמנות מספרות
@@ -58,7 +58,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           קצת עליי
@@ -70,7 +70,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           שאלות נפצות
@@ -82,7 +82,7 @@ const NavbarLinks = (props) => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={1000}
           className={props.navbarLinks.link}
         >
           צור קשר

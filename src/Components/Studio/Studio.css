@@ -1,12 +1,12 @@
 :root {
-  --studio-fontSize: 2rem;
+  --about-fontSize: 2rem;
+  --about-fontWeight: 400;
 }
 
 .studio {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
   padding: 3rem 0;
 }
 
@@ -20,7 +20,7 @@
   background: url("/src/assets/StudioPhotos/studio2.png") center no-repeat;
   background-size: cover;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(2px) brightness(40%);
 }
 
 .studio__container {
@@ -33,7 +33,7 @@
   align-items: center;
   max-width: 100rem;
   opacity: 0;
-  transform: translateY(12%);
+  transform: translateY(10%);
 }
 
 .studio__container > img {
@@ -46,10 +46,6 @@
   box-shadow: 0 5px 10px black;
   border: 1px solid black;
   transition: transform 0.5s ease-in;
-}
-
-.studio__container > img:hover {
-  transform: scale(1.1);
 }
 
 .studio__text-container {
@@ -65,27 +61,25 @@
 }
 
 .studio__text-container > h1 {
-  font-weight: 600;
-  font-size: calc(var(--studio-fontSize) + 2.5rem);
-  color: pink;
+  font-weight: calc(var(--about-fontWeight) + 300);
+  font-size: calc(var(--about-fontSize) + 2.5rem);
+  text-shadow: 0 2px 5px black;
+  color: var(--color-main);
 }
 
 .studio__text-container > p {
-  font-size: calc(var(--studio-fontSize) + 0.1rem);
-  line-height: calc(var(--studio-fontSize) + 1rem);
-  font-weight: 500;
+  font-size: calc(var(--about-fontSize));
+  line-height: calc(var(--about-fontSize) + 1rem);
+  font-weight: calc(var(--about-fontWeight));
 }
 
 .studio__container.studio-fade-bottom {
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: opacity 1s ease-in, transform 1s ease-in;
   transform: translateY(0);
 }
 
 @media only screen and (min-width: 768px) {
-  .studio {
-    padding: 4rem 0;
-  }
   .studio__container {
     flex-direction: row-reverse;
     gap: 5rem;
@@ -94,9 +88,5 @@
   .studio__text-container {
     text-align: right;
     align-items: flex-start;
-  }
-
-  studio__container > img:hover {
-    transform: scale(1.2);
   }
 }

@@ -1,9 +1,8 @@
 .about-box {
-  position: relative; /* Add position relative to enable pseudo-element */
-  background-color: rgba(0, 0, 0, 0.55);
+  position: relative;
   direction: rtl;
   overflow: hidden;
-  padding: 2rem 0;
+  padding-top: 3rem;
 }
 
 .about-box::before {
@@ -15,8 +14,7 @@
   height: 100%;
   background: url("/src/assets/StudioPhotos/studio1.png") no-repeat center;
   background-size: cover;
-  background-color: black;
-  filter: blur(3px);
+  filter: blur(2px) brightness(40%);
   z-index: -1;
 }
 
@@ -27,6 +25,7 @@
   align-items: center;
   flex-direction: column;
   width: 90%;
+  max-width: 100rem;
   gap: 2rem;
 }
 
@@ -37,8 +36,7 @@
   flex-direction: column;
   color: white;
   text-align: center;
-  font-size: 2.1rem;
-  gap: 3rem;
+  gap: 1rem;
   font-weight: 500;
 }
 
@@ -57,39 +55,36 @@
 }
 
 .about-head > h1 {
-  color: white;
-  font-size: 3.5rem;
+  font-weight: calc(var(--about-fontWeight) + 300);
+  font-size: calc(var(--about-fontSize) + 1.5rem);
+  text-shadow: 0 2px 5px black;
 }
 
 .about-head > h2 {
-  color: pink;
-  font-size: 3.5rem;
+  font-weight: calc(var(--about-fontWeight) + 300);
+  font-size: calc(var(--about-fontSize) + 2rem);
+  text-shadow: 0 2px 5px black;
+  color: var(--color-main);
 }
 
 .about-text {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
+  font-size: calc(var(--about-fontSize));
+  line-height: calc(var(--about-fontSize) + 1rem);
+  font-weight: calc(var(--about-fontWeight));
 }
 
 @media only screen and (min-width: 768px) {
   .about-container {
     flex-direction: row-reverse;
     gap: 5rem;
-    max-width: 100rem;
     padding: initial;
   }
 
   .about-text-container {
     text-align: right;
     align-items: flex-start;
-  }
-
-  .about-img {
-    transform: translate(25%, 5%);
-  }
-
-  .about-img.about-fade-right {
-    transform: translate(0%, 5%);
   }
 }
 

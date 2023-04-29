@@ -25,7 +25,7 @@ const BeforeAndAfter = () => {
     <div className='gallery-box' id='beforeandafter'>
       <div className='gallery-head'>
         <h1>לפני ואחרי</h1>
-        <p>מההתחלה עד הסוף - סיפורי הצלחה של מתאמנות</p>
+        <h2>מההתחלה עד הסוף - סיפורי הצלחה של מתאמנות</h2>
       </div>
       <div className='gallery-container'>
         {images.map((img, i) => (
