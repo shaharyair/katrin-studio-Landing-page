@@ -18,7 +18,7 @@ const SignupForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
-    baseURL: "https://katrinfitness-nodejs-production.up.railway.app/",
+    baseURL: process.env.API_URL,
   });
 
   const handleSubmit = async (event) => {
