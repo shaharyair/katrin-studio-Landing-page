@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./Studio.css";
 import ScrollTrigger from "react-scroll-trigger";
 import studioPng from "/src/assets/StudioPhotos/studio3.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Studio() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +34,7 @@ function Studio() {
                 יותר.
               </p>
             </div>
-            <img src={studioPng} alt='' />
+            <LazyLoadImage src={studioPng} alt={studioPng} />
           </div>
         </ScrollTrigger>
       </div>

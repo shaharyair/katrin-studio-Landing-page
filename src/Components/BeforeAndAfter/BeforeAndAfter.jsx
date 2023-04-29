@@ -8,6 +8,7 @@ import limor1 from "/src/assets/BeforeAndAfter/Limor/1.jpg";
 import limor2 from "/src/assets/BeforeAndAfter/Limor/2.jpg";
 import revital1 from "/src/assets/BeforeAndAfter/Revital/1.jpg";
 import revital2 from "/src/assets/BeforeAndAfter/Revital/2.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BeforeAndAfter = () => {
   const images = [
@@ -29,7 +30,7 @@ const BeforeAndAfter = () => {
       </div>
       <div className='gallery-container'>
         {images.map((img, i) => (
-          <img src={img.url} key={i} alt='/' />
+          <LazyLoadImage src={img.url} key={i} alt={img.url} />
         ))}
       </div>
     </div>

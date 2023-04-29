@@ -4,6 +4,7 @@ import NavbarLinks from "./NavbarLinks";
 import logoNoCircle from "/src/assets/Logo/logo-no-circle.png";
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   FaBars,
   FaTimes,
@@ -70,7 +71,7 @@ function Navbar() {
             className='navbar__logo'
             onClick={closeMobileMenu}
           >
-            <img src={logoNoCircle} alt='img' />
+            <LazyLoadImage src={logoNoCircle} alt={logoNoCircle} />
           </ScrollLink>
           <div className='navbar__social-icons'>
             <a

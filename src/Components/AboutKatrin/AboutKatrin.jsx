@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./AboutKatrin.css";
 import ScrollTrigger from "react-scroll-trigger";
 import katrinAbout from "/src/assets/KatrinPhotos/katrinAbout.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AboutKatrin = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,9 +35,9 @@ const AboutKatrin = () => {
             </div>
           </div>
           <ScrollTrigger onEnter={handleEnter}>
-            <img
+            <LazyLoadImage
               src={katrinAbout}
-              alt='/'
+              alt={katrinAbout}
               className={`about-img ${isVisible ? "about-fade-right" : ""}`}
             />
           </ScrollTrigger>

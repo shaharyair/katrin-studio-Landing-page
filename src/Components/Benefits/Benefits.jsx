@@ -4,6 +4,7 @@ import Pic1 from "/src/assets/Benefits/benefits1.jpg";
 import Pic3 from "/src/assets/Benefits/benefits2.jpg";
 import katrinSquat from "/src/assets/Benefits/katrinSquat.png";
 import ScrollTrigger from "react-scroll-trigger";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Benefits() {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,7 +23,7 @@ function Benefits() {
             }`}
           >
             <div className='benefit'>
-              <img src={Pic1} alt='/' />
+              <LazyLoadImage src={Pic1} alt={Pic1} />
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>משפחתיות</h1>
                 <p className='benefits-content'>
@@ -33,7 +34,7 @@ function Benefits() {
               </div>
             </div>
             <div className='benefit'>
-              <img src={katrinSquat} alt='/' />
+              <LazyLoadImage src={katrinSquat} alt={katrinSquat} />
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>מקצועיות</h1>
                 <p className='benefits-content'>
@@ -44,7 +45,7 @@ function Benefits() {
               </div>
             </div>
             <div className='benefit'>
-              <img src={Pic3} alt='/' />
+              <LazyLoadImage src={Pic3} alt={Pic3} />
               <div className='benefits__text-container'>
                 <h1 className='benefits-title'>ליווי אישי וצמוד</h1>
                 <p className='benefits-content'>
