@@ -50,7 +50,7 @@ const FAQ = () => {
     <>
       <div className='faq-box' id='faq-box'>
         <div className='faq'>
-          <h1>יש לך שאלות ?</h1>
+          <h1>יש לך שאלות?</h1>
           {questions.map((item, i) => (
             <div className='faq-item' key={i}>
               <div className='title' onClick={() => toggle(i)}>
