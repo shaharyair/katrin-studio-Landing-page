@@ -8,6 +8,7 @@ import reviews2 from "/src/assets/Whatsapp Reviews/2.png";
 import reviews3 from "/src/assets/Whatsapp Reviews/3.png";
 import reviews4 from "/src/assets/Whatsapp Reviews/4.png";
 import reviews5 from "/src/assets/Whatsapp Reviews/5.png";
+import reviews6 from "/src/assets/Whatsapp Reviews/6.png";
 
 const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
@@ -44,6 +45,7 @@ const Carousel = () => {
     { url: reviews3 },
     { url: reviews4 },
     { url: reviews5 },
+    { url: reviews6 },
   ];
 
   return (
