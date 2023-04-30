@@ -41,7 +41,7 @@
   filter: drop-shadow(0 5px 5px black);
   order: 1;
   border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
-  animation: fade-mobile 1.2s ease-in;
+  animation: fade-mobile 1.2s ease;
   animation-delay: 2.5s;
   z-index: 0;
 }
@@ -63,7 +63,7 @@
   font-weight: 700;
   color: white;
   text-shadow: 0 2.5px 10px black;
-  animation: fade-mobile 1.2s ease-in;
+  animation: fade-mobile 1.2s ease;
   animation-delay: 2.5s;
   z-index: 1;
 }
@@ -132,7 +132,7 @@
   }
 
   .hero__text-container {
-    animation: fade-to-left 1.2s ease-in;
+    animation: fade-to-left 1.2s ease;
     animation-delay: 2.5s;
   }
 
@@ -145,7 +145,7 @@
       rgba(125, 94, 99, 1) 0%,
       rgba(255, 192, 203, 1) 100%
     );
-    animation: fade-to-right 1.2s ease-in;
+    animation: fade-to-right 1.2s ease;
     animation-delay: 2.5s;
   }
 
