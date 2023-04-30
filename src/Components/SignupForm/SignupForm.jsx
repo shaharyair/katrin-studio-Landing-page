@@ -18,13 +18,14 @@ const SignupForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
-    baseURL: "https://katrin-fitness-nodejs.vercel.app/",
+    baseURL: "https://katrin-fitness.onrender.com/",
+    // baseURL: "http://localhost:3000/",
   });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await api.post("/send-email", formData);
+      await api.post("/send-email", formData, { method: "POST" });
       setSubmitStatus("resolved");
       setFormData({
         fullName: "",
