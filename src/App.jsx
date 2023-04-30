@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
@@ -12,10 +12,24 @@ import Reviews from "./Components/Reviews/Reviews";
 import AboutKatrin from "./Components/AboutKatrin/AboutKatrin";
 import BeforeAndAfter from "./Components/BeforeAndAfter/BeforeAndAfter";
 import Recipes from "./Components/Recipes/Recipes";
+import LoadingScreen from "./Components/LoadingScreen/LoadingScreen";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
+      {isLoading ? (
+        <LoadingScreen addClassName='' />
+      ) : (
+        <LoadingScreen addClassName='fade-out-loading-screen' />
+      )}
       <Navbar />
       <Hero />
       <Benefits />
