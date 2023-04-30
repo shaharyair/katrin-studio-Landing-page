@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./Studio.css";
 import ScrollTrigger from "react-scroll-trigger";
-import studioPng from "/src/assets/StudioPhotos/studio3.png";
+import studioPng from "/src/assets/StudioPhotos/studio3.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Studio() {

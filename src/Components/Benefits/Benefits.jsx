@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import "./Benefits.css";
 import Pic1 from "/src/assets/Benefits/benefits1.jpg";
 import Pic3 from "/src/assets/Benefits/benefits2.jpg";
-import katrinSquat from "/src/assets/Benefits/katrinSquat.png";
+import katrinSquat from "/src/assets/Benefits/katrinSquat.jpg";
 import ScrollTrigger from "react-scroll-trigger";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
