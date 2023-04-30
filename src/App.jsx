@@ -20,16 +20,12 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2500);
   }, []);
 
   return (
     <>
-      {isLoading ? (
-        <LoadingScreen addClassName='' />
-      ) : (
-        <LoadingScreen addClassName='fade-out-loading-screen' />
-      )}
+      {isLoading && <LoadingScreen />}
       <Navbar />
       <Hero />
       <Benefits />
