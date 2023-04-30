@@ -2,7 +2,6 @@ import React from "react";
 import "./Hero.css";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import katrinHero from "/src/assets/KatrinPhotos/katrinHero.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Hero() {
   return (
@@ -10,7 +9,7 @@ function Hero() {
       <div className='hero' id='hero'>
         <div className='hero__container'>
           <div className='hero__img-wrap'>
-            <LazyLoadImage src={katrinHero} alt={katrinHero} />
+            <img src={katrinHero} alt={katrinHero} />
           </div>
           <div className='hero__text-container'>
             <div className='hero__text-head'>

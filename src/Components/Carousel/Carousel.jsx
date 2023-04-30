@@ -9,7 +9,6 @@ import reviews3 from "/src/assets/Whatsapp Reviews/3.png";
 import reviews4 from "/src/assets/Whatsapp Reviews/4.png";
 import reviews5 from "/src/assets/Whatsapp Reviews/5.png";
 import reviews6 from "/src/assets/Whatsapp Reviews/6.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
@@ -54,7 +53,7 @@ const Carousel = () => {
       <Slider {...carouselSettings}>
         {images.map((image, index) => (
           <div key={index}>
-            <LazyLoadImage
+            <img
               src={image.url}
               alt={`Slide ${index + 1}`}
               className='carousel-image'
