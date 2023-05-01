@@ -12,7 +12,7 @@
 
 .benefits span,
 .benefits-title {
-  color: pink;
+  color: var(--color-main);
 }
 
 .benefits-container {

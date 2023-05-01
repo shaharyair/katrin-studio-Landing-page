@@ -109,7 +109,7 @@
 }
 
 .navbar__link:hover {
-  color: pink;
+  color: var(--color-main);
 }
 
 .navbar__social-link:hover {

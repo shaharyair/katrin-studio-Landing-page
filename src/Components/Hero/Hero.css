@@ -38,7 +38,7 @@
   top: 75%;
   left: 75%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 5px 5px black);
+  filter: drop-shadow(0 5px 10px black);
   order: 1;
   border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
   animation: fade-mobile 1.2s ease;
@@ -50,7 +50,7 @@
   width: 85vw;
   height: auto;
   max-width: 45rem;
-  filter: drop-shadow(0 2px 2px black);
+  filter: drop-shadow(0 2px 5px black) brightness(95%);
 }
 
 .hero__text-container {
@@ -62,7 +62,7 @@
   gap: 3.5rem;
   font-weight: 700;
   color: white;
-  text-shadow: 0 2.5px 10px black;
+  text-shadow: 0 2px 5px black;
   animation: fade-mobile 1.2s ease;
   animation-delay: 2.5s;
   z-index: 1;
@@ -71,7 +71,7 @@
 .hero__text-head > h1 {
   font-size: 4rem;
   color: white;
-  text-shadow: 0 5px 10px black;
+  text-shadow: 0 2px 5px black;
 }
 
 .hero__text {
@@ -87,7 +87,7 @@
 
 .hero__text-container > p,
 .hero__text-head span {
-  color: pink;
+  color: var(--color-main);
 }
 
 .hero__buttons-container {
@@ -112,14 +112,14 @@
   border: 0.5px solid white;
   gap: 1rem;
   direction: rtl;
-  box-shadow: 0 5px 10px black;
+  box-shadow: 0 5px 5px black;
   text-shadow: initial;
 }
 
 .hero__button:hover {
   background-color: var(--color-main);
   color: black;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -147,10 +147,6 @@
     );
     animation: fade-to-right 1.2s ease;
     animation-delay: 2.5s;
-  }
-
-  .hero__img-wrap > img {
-    filter: drop-shadow(0 5px 5px black) brightness(95%);
   }
 
   .hero__text-head > h1 {
