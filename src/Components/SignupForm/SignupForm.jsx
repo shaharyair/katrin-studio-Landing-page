@@ -18,7 +18,7 @@ const SignupForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const api = axios.create({
-    baseURL: "http://www.katrin.co.il/",
+    baseURL: "https://www.katrin.co.il/",
     // baseURL: "https://katrin-fitness-nodejs.vercel.app/",
     // baseURL: "https://katrin-fitness.onrender.com/",
     // baseURL: "http://localhost:3000/",
