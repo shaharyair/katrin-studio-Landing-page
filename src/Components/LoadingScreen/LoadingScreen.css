@@ -39,8 +39,6 @@
   }
 
   .loading-spinner {
-    width: 50%;
-    height: 50%;
     max-width: 32rem;
     max-height: 32rem;
   }
