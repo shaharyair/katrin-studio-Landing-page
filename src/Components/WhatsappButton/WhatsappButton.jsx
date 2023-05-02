@@ -1,16 +1,15 @@
 import React from "react";
 import "./WhatsappButton.css";
 import { FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function WhatsappButton() {
   return (
     <>
-      <div className='button__circle'>
-        <Link to='/'>
+      <a href='https://wa.me/972556620441'>
+        <div className='button-circle'>
           <FaWhatsapp className='button' />
-        </Link>
-      </div>
+        </div>
+      </a>
     </>
   );
 }

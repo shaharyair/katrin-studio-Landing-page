@@ -1,25 +1,46 @@
-@import url(/src/Variables.css);
-
-:root {
-  --circle-size: 8rem;
-}
-
-.button__circle {
-  z-index: 999;
+.button-circle {
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+  cursor: pointer;
   position: fixed;
-  top: 87vh;
-  left: 2vw;
+  top: calc(100% - 20px);
+  left: calc(0% + 20px);
+  transform: translate(0%, -100%);
   background-color: var(--color-main);
-  height: var(--circle-size);
-  width: var(--circle-size);
+  color: var(--color-black1);
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  animation: whatappbutton-anim 2s ease;
+  filter: drop-shadow(0 5px 10px black);
   border-radius: 50%;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
 }
 
 .button {
-  font-size: 5rem;
-  color: #fff;
+  padding: 1.5rem;
+  font-size: 10rem;
+}
+
+.button-circle:hover {
+  background-color: white;
+  transform: translate(0, -100%) scale(1.15);
+}
+
+@media only screen and (min-width: 768px) {
+  .button-circle {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@keyframes whatappbutton-anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

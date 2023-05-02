@@ -1,0 +1,22 @@
+.carousel-container {
+  width: 100%;
+  max-width: 95%;
+  filter: drop-shadow(0 5px 10px black);
+  margin: auto;
+}
+
+.carousel-image {
+  width: 95%;
+  margin: auto;
+  object-fit: cover;
+}
+
+.slick-dots li.slick-active button:before {
+  color: White !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel-container {
+    max-width: 55%;
+  }
+}

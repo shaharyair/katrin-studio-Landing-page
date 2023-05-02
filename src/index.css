@@ -1,12 +1,22 @@
-html {
-  font-size: 62.5%;
-  font-family: Assistant;
-  width: 100%;
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-main: #ffc0cb;
+  --color-black1: #191919;
+  --color-black2: #202020;
 }
 
 * {
+  font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-black2);
 }

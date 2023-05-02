@@ -1,25 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import WhatsappButton from "./Components/WhatsappButton/WhatsappButton";
-import Execrises from "./Components/Content/Execrises/Execrises";
-import Studio from "./Components/Content/Studio/Studio";
+import Studio from "./Components/Studio/Studio";
+import FAQ from "./Components/FAQ/FAQ";
+import Benefits from "./Components/Benefits/Benefits";
+import SignupForm from "./Components/SignupForm/SignupForm";
+import Footer from "./Components/Footer/Footer";
+import Reviews from "./Components/Reviews/Reviews";
+import AboutKatrin from "./Components/AboutKatrin/AboutKatrin";
+import BeforeAndAfter from "./Components/BeforeAndAfter/BeforeAndAfter";
+import Recipes from "./Components/Recipes/Recipes";
+import LoadingScreen from "./Components/LoadingScreen/LoadingScreen";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <>
-      <Router>
-        <WhatsappButton />
-        <Navbar />
-        <Hero />
-        <Studio />
-        {/* <Execrises /> */}
-        <Routes>
-          <Route to='/' />
-        </Routes>
-      </Router>
+      {isLoading && <LoadingScreen />}
+      <Navbar />
+      <Hero />
+      <Benefits />
+      <Studio />
+      <Recipes />
+      <BeforeAndAfter />
+      <Reviews />
+      <AboutKatrin />
+      <FAQ />
+      <SignupForm />
+      <Footer />
+      <WhatsappButton />
     </>
   );
 }

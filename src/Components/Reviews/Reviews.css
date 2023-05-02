@@ -1,0 +1,50 @@
+.reviews-box {
+  width: 100%;
+  height: 100%;
+  direction: rtl;
+  padding: 2rem 0 6rem 0;
+}
+
+.reviews-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  max-width: 120rem;
+  gap: 3rem;
+}
+
+.reviews-container-text {
+  text-align: center;
+  margin: auto;
+}
+
+.reviews-container-text > h1 {
+  color: var(--color-main);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviews-container-text > h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-container {
+    flex-direction: row;
+  }
+
+  .reviews-container-text {
+    text-align: right;
+  }
+
+  .reviews-container-text > h1 {
+    font-size: 5rem;
+  }
+
+  .reviews-container-text > h2 {
+    font-size: 3rem;
+  }
+}
