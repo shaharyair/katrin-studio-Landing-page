@@ -9,10 +9,10 @@ If you're interested in the backend code, you can find it on [GitHub](https://gi
 Feel free to clone this repository, customize it to your needs, and use it as a starting point for your own landing page!
 
 
-## Screenshots
+## Showcase
 
 
-[![Landing Page Screenshot](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/blNHTYAJNRE)
+![Landing Page Gif](https://imgur.com/FimWkoO.gif)
 
 
 ## Features 🚀
