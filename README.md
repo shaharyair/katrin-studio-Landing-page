@@ -1,6 +1,6 @@
 # Katrin's Studio Landing Page
 
-Welcome to the frontend of the Katrin Studio Landing Page! This project was created for a local fitness studio to showcase their services and connect with potential customers.
+Welcome to the frontend of the Katrin Studio Landing Page! This project was created for a local fitness studio in israel to showcase their services and connect with potential customers.
 
 The landing page is deployed on [Katrin.co.il](https://www.katrin.co.il/), where you can see the final result.
 
