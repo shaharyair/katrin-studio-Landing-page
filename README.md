@@ -12,7 +12,7 @@ Feel free to clone this repository, customize it to your needs, and use it as a 
 ## Showcase
 
 
-![](https://github.com/shaharyair/katrinFitness-React/blob/main/Showcase.gif)
+![](https://github.com/shaharyair/katrinFitness-React/blob/main/src/assets/Showcase.gif)
 
 
 ## Features 🚀
