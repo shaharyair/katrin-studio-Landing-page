@@ -40,7 +40,7 @@ The landing page was built using the following technologies:
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Slick](https://react-slick.neostack.com/)
 - [React Scroll](https://www.npmjs.com/package/react-scroll)
-- [React Scroll Trigger](https://www.npmjs.com/package/react-scroll-trigger)
+- [React Scroll Trigger](https://www.npmjs.com/packge/react-scroll-trigger)
 - [Axios](https://axios-http.com/)
 
 ## Installation
@@ -54,17 +54,7 @@ git clone git@github.com:shaharyair/katrinFitness-React.git
 2. Install dependencies:
 
 ```
-npm install react
-npm install react-icons
-npm install react-slick
-npm install react-scroll
-npm install react-scroll-trigger
-npm install axios
-npm install dotenv
-npm install postcss
-npm install autoprefixer
-npm install slick-carousel
-npm install -D @types/react @types/react-dom @vitejs/plugin-react vite
+npm i 
 ```
 
 
