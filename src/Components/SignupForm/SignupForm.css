@@ -140,7 +140,6 @@
   .form-container {
     flex-direction: row;
     justify-content: space-between;
-    gap: initial;
   }
 
   .form-container > h1 {

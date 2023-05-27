@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { Link as ScrollLink } from "react-scroll";
 import NavbarLinks from "../Navbar/NavbarLinks";
 import {
   AiOutlineMail,
@@ -32,7 +31,7 @@ function Footer() {
               <li>
                 <a href='tel:+972556620441' className='footer-info-item'>
                   <AiOutlinePhone className='footer-icon' />
-                  055-6520441
+                  055-6620441
                 </a>
               </li>
               <li>
