@@ -98,13 +98,7 @@ function Navbar() {
             </a>
           </div>
           <div className='navbar__menu-mobile-icon'>
-            <Squash
-              rounded
-              duration={0.25}
-              size={25}
-              toggled={click}
-              toggle={handleClick}
-            />
+            <Squash rounded size={25} toggled={click} toggle={handleClick} />
           </div>
           <ul className={click ? "navbar__menu navbar-mobile" : "navbar__menu"}>
             <NavbarLinks navbarLinks={navbarLinks} />
