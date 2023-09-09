@@ -181,7 +181,6 @@
 
   .navbar__menu-mobile-icon {
     display: block;
-    margin-top: 1rem;
     font-size: calc(var(--navbar-fontSize) + 1rem);
     order: 3;
     cursor: pointer;

@@ -20,7 +20,7 @@
   height: 100%;
   background: url("/src/assets/StudioPhotos/studio3.jpg") center no-repeat;
   background-size: cover;
-  filter: brightness(80%);
+  filter: brightness(60%) blur(1px);
   z-index: -1;
 }
 
@@ -29,7 +29,7 @@
   max-width: 120rem;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -38,19 +38,21 @@
   top: 75%;
   left: 75%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 5px 10px black);
-  order: 1;
-  border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
-  animation: fade-mobile 1.2s ease;
+  padding: 2.5rem;
+  animation: fade-to-right 1.2s ease;
   animation-delay: 2.5s;
+  order: 1;
   z-index: 0;
+  display: none;
 }
 
 .hero__img-wrap > img {
   width: 85vw;
   height: auto;
   max-width: 45rem;
-  filter: drop-shadow(0 2px 5px black) brightness(95%);
+  box-shadow: 0 5px 10px black;
+  border: 1px solid black;
+  filter: saturate(110%);
 }
 
 .hero__text-container {
@@ -139,14 +141,7 @@
   .hero__img-wrap {
     position: initial;
     transform: initial;
-    padding: 2.5rem;
-    background: linear-gradient(
-      90deg,
-      rgba(125, 94, 99, 1) 0%,
-      rgba(255, 192, 203, 1) 100%
-    );
-    animation: fade-to-right 1.2s ease;
-    animation-delay: 2.5s;
+    display: block;
   }
 
   .hero__text-head > h1 {
