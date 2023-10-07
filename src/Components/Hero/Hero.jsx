@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import katrinAndLina from "/src/assets/KatrinPhotos/katrinAndLina.png";
+import katrinAndLina from "../../assets/KatrinPhotos/KatrinAndLina.png";
 
 function Hero() {
   return (

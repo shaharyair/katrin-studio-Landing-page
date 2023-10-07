@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./AboutKatrin.css";
 import ScrollTrigger from "react-scroll-trigger";
-import katrinAbout from "/src/assets/KatrinPhotos/katrinAbout.png";
+import katrinAbout from "../../assets/KatrinPhotos/katrinAbout.png";
 
 const AboutKatrin = () => {
   const [isVisible, setIsVisible] = useState(false);
