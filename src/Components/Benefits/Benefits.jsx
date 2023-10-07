@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import "./Benefits.css";
-import Pic1 from "/src/assets/Benefits/benefits1.jpg";
-import Pic3 from "/src/assets/Benefits/benefits2.jpg";
-import katrinSquat from "/src/assets/Benefits/katrinSquat.jpg";
+import Pic1 from "../../assets/Benefits/benefits1.jpg";
+import Pic3 from "../../assets/Benefits/benefits2.jpg";
+import katrinSquat from "../../assets/Benefits/katrinSquat.jpg";
 import ScrollTrigger from "react-scroll-trigger";
 
 function Benefits() {

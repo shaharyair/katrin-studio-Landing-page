@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css"; // Import custom styles
-import reviews1 from "/src/assets/Whatsapp Reviews/1.png";
-import reviews2 from "/src/assets/Whatsapp Reviews/2.png";
-import reviews3 from "/src/assets/Whatsapp Reviews/3.png";
-import reviews4 from "/src/assets/Whatsapp Reviews/4.png";
-import reviews5 from "/src/assets/Whatsapp Reviews/5.png";
-import reviews6 from "/src/assets/Whatsapp Reviews/6.png";
+import reviews1 from "../../assets/Whatsapp Reviews/1.png";
+import reviews2 from "../../assets/Whatsapp Reviews/2.png";
+import reviews3 from "../../assets/Whatsapp Reviews/3.png";
+import reviews4 from "../../assets/Whatsapp Reviews/4.png";
+import reviews5 from "../../assets/Whatsapp Reviews/5.png";
+import reviews6 from "../../assets/Whatsapp Reviews/6.png";
 
 const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);

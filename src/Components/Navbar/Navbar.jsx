@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import NavbarLinks from "./NavbarLinks";
-import logoNoCircle from "/src/assets/Logo/logo-no-circle.png";
+import logoNoCircle from "../../assets/Logo/logo-no-circle.png";
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import {

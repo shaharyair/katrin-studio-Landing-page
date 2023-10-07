@@ -1,13 +1,13 @@
 import React from "react";
 import "./BeforeAndAfter.css";
-import daniel1 from "/src/assets/BeforeAndAfter/Daniel/1.jpg";
-import daniel2 from "/src/assets/BeforeAndAfter/Daniel/2.jpg";
-import noa1 from "/src/assets/BeforeAndAfter/Noa/1.jpg";
-import noa2 from "/src/assets/BeforeAndAfter/Noa/2.jpg";
-import limor1 from "/src/assets/BeforeAndAfter/Limor/1.jpg";
-import limor2 from "/src/assets/BeforeAndAfter/Limor/2.jpg";
-import revital1 from "/src/assets/BeforeAndAfter/Revital/1.jpg";
-import revital2 from "/src/assets/BeforeAndAfter/Revital/2.jpg";
+import daniel1 from "../../assets/BeforeAndAfter/Daniel/1.jpg";
+import daniel2 from "../../assets/BeforeAndAfter/Daniel/2.jpg";
+import noa1 from "../../assets/BeforeAndAfter/Noa/1.jpg";
+import noa2 from "../../assets/BeforeAndAfter/Noa/2.jpg";
+import limor1 from "../../assets/BeforeAndAfter/Limor/1.jpg";
+import limor2 from "../../assets/BeforeAndAfter/Limor/2.jpg";
+import revital1 from "../../assets/BeforeAndAfter/Revital/1.jpg";
+import revital2 from "../../assets/BeforeAndAfter/Revital/2.jpg";
 
 const BeforeAndAfter = () => {
   const images = [
