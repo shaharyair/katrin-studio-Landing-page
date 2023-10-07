@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./Studio.css";
 import ScrollTrigger from "react-scroll-trigger";
-import studioPng from "/src/assets/StudioPhotos/studio3.jpg";
+import studioPng from "../../assets/StudioPhotos/studio3.jpg";
 
 function Studio() {
   const [isVisible, setIsVisible] = useState(false);

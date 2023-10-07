@@ -1,6 +1,6 @@
 import React from "react";
 import "./LoadingScreen.css";
-import logoCircle from "/src/assets/Logo/logo-circle.png";
+import logoCircle from "../../assets/Logo/logo-circle.png";
 
 function LoadingScreen(props) {
   return (
