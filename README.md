@@ -69,3 +69,9 @@ npm run dev
 ```
 npm run build
 ```
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Make sure to replace placeholders and other relevant details with your actual information.
