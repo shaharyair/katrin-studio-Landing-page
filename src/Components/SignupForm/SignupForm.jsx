@@ -1,3 +1,4 @@
+import { API_BASE_URL, ENDPOINTS } from "../../../config";
 import React, { useState } from "react";
 import axios from "axios";
 import "./SignupForm.css";
@@ -17,17 +18,11 @@ const SignupForm = () => {
 
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const api = axios.create({
-    baseURL: "https://www.katrin.co.il/",
-    // baseURL: "https://katrin-fitness-nodejs.vercel.app/",
-    // baseURL: "https://katrin-fitness.onrender.com/",
-    // baseURL: "http://localhost:3000/",
-  });
-
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      await api.post("/send-email", formData, { method: "POST" });
+      await axios.post(`${API_BASE_URL}${ENDPOINTS.sendEmail}`, formData);
       setSubmitStatus("resolved");
       setFormData({
         fullName: "",
